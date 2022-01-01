@@ -307,5 +307,10 @@ namespace FP_PEMROGLANJUT.View
 
             NavigationService.Navigate(pilihGamePage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

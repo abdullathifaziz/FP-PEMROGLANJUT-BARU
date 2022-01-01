@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="585" d:DesignWidth="992"
       Title="HasilTransaksiPage">
 
     <Grid>
@@ -24,6 +24,9 @@
         </Grid.ColumnDefinitions>
 
         <Border Grid.Column="1" Grid.Row="1" Background="#14279B" CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+            </Border.Effect>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="128"/>
@@ -32,10 +35,16 @@
 
                 <Image Source="/Images/berhasil.png" Width="100" Height="100"/>
 
-                <Label Grid.Column="1" Content="Transaksi Berhasil" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" FontSize="36" FontFamily="Righteous" />
+                <Label Grid.Column="1" Content="Transaksi Berhasil" VerticalContentAlignment="Center" 
+                 HorizontalContentAlignment="Center" Foreground="White" FontSize="36" FontFamily="Righteous" />
             </Grid>
         </Border>
-        <Button x:Name="btnSelanjutnya" Content="Kembali ke Beranda" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" FontSize="18" Width="270" Height="57" Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
+        <Button x:Name="btnSelanjutnya" Content="Kembali ke Beranda" HorizontalAlignment="Center" Grid.Row="3" 
+         Grid.Column="1" VerticalAlignment="Center" FontSize="18" Width="270" Height="57" Background="#FF797EF6" 
+         Foreground="White" FontFamily="Righteous" MouseDown="btnSelanjutnya_MouseDown">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+            </Button.Effect>
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>    

@@ -22,5 +22,11 @@ namespace FP_PEMROGLANJUT.View
         {
             InitializeComponent();
         }
+
+        private void btnSelanjutnya_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            NavigationService.Navigate(homePage);
+        }
     }
 }

@@ -32,31 +32,57 @@
             </Grid.RowDefinitions>
 
             <Border Grid.Column="1" Grid.Row="1" Background="#14279B" CornerRadius="10">
-                <DockPanel Grid.Row="1" x:Name="menuIsiUlangUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" MouseDown="menuIsiUlangUtama_MouseDown" Grid.Column="1">
-                    <Image Width="60" Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center"
-                            Source="/Images/isiulang.png"/>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuIsiUlangUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuIsiUlangUtama_MouseDown" Grid.Column="1">
+                    <Image Width="60" Height="60" VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Source="/Images/isiulang.png"/>
                 </DockPanel>
             </Border>
 
             <Border Grid.Column="3" Grid.Row="1" Background="#14279B" CornerRadius="10">
-                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" MouseDown="menuTagihanUtama_MouseDown">
-                    <Image Width="60" Height="60"
-                    VerticalAlignment="Center" HorizontalAlignment="Center"
-                    Source="/Images/tagihan.png"/>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuTagihanUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuTagihanUtama_MouseDown">
+                    <Image Width="60" Height="60" VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Source="/Images/tagihan.png"/>
                 </DockPanel>
             </Border>
 
             <Border Grid.Column="5" Grid.Row="1" Background="#14279B" CornerRadius="10">
-                <DockPanel Grid.Row="1" x:Name="menuHiburanUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" MouseDown="menuHiburanUtama_MouseDown" Grid.Column="5">
-                    <Image Width="60" Height="60"
-                        VerticalAlignment="Center" HorizontalAlignment="Center"
-                        Source="/Images/hiburan.png"/>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuHiburanUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuHiburanUtama_MouseDown" Grid.Column="5">
+                    <Image Width="60" Height="60" VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Source="/Images/hiburan.png"/>
                 </DockPanel>
             </Border>
         </Grid>
-        <Label Content="SELAMAT DATANG" Foreground="White" FontSize="36" Margin="0,80,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous"/>
-        <Label Content="DI APLIKASI PAYME" Foreground="White" FontSize="36" Margin="0,130,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous"/>
-        <Label Content="Budi Perkasa - Shift 1" Foreground="#FFD8CEFF" FontSize="18" Margin="0,220,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous"/>
+
+        <Label Content="SELAMAT DATANG" Foreground="White" FontSize="36" Margin="0,80,0,0" 
+         HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="DI APLIKASI PAYME" Foreground="White" FontSize="36" Margin="0,130,0,0" 
+         HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Budi Perkasa - Shift 1" Foreground="#FFD8CEFF" FontSize="18" Margin="0,220,0,0" 
+         HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
     </Grid>
 </Page>

@@ -28,5 +28,10 @@ namespace FP_PEMROGLANJUT.View
             NominalEWalletPage nominalEWalletPage = new NominalEWalletPage();
             NavigationService.Navigate(nominalEWalletPage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,5 +28,10 @@ namespace FP_PEMROGLANJUT.View
             NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
             NavigationService.Navigate(noTelpPembeliPage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

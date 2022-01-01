@@ -28,5 +28,10 @@ namespace FP_PEMROGLANJUT.View
             CekTagihanPascabayarPage cekTagihanPascabayarPage = new CekTagihanPascabayarPage();
             NavigationService.Navigate(cekTagihanPascabayarPage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

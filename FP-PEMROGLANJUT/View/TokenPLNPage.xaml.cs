@@ -27,5 +27,10 @@ namespace FP_PEMROGLANJUT.View
         {
             NavigationService.Navigate(new NominalVoucherPage());
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

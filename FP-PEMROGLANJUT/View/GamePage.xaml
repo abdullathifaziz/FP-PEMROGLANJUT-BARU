@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="585" d:DesignWidth="992"
       Title="GamePage">
 
     <Grid>
@@ -13,7 +13,28 @@
             <RowDefinition Height="19*"/>
             <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
-        <Label Content="Game" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="227" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="{DynamicResource Righteous}"/>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" 
+             HorizontalAlignment="Left" Margin="125,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" 
+                 Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" 
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            </Border>
+        </Grid>
+        
+        <Label Content="Game" Foreground="White" FontSize="36" HorizontalAlignment="Center"
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="227" VerticalContentAlignment="Center" 
+         HorizontalContentAlignment="Center" FontFamily="{DynamicResource Righteous}"/>
+        
         <Grid Width="770" Height="350" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -27,53 +48,59 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuPUBG" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPUBG_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/pubg.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuPUBG" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuPUBG_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/pubg.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuMobileLegends" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuMobileLegends_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/ml.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuMobileLegends" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuMobileLegends_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/ml.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="2" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuFreeFire" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuFreeFire_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/freefire.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuFreeFire" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuFreeFire_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/freefire.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="3" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuArenaOfValor" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuArenaOfValor_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/aov.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuArenaOfValor" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuArenaOfValor_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/aov.png"/>
+                </DockPanel>
             </Border>
 
-            <Border Grid.Column="1" Grid.Row="1" Background="#14279B" Margin="100,10,100,10" CornerRadius="10" Grid.ColumnSpan="2">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuSteam" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuSteam_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/steam.png"/>
-                    </DockPanel>
-                </Grid>
+            <Border Grid.Column="1" Grid.Row="1" Background="#14279B" Margin="100,10,100,10" CornerRadius="10" 
+             Grid.ColumnSpan="2">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuSteam" Height="145" Width="175" Style="{DynamicResource MenuDockPanel}" 
+                 MouseDown="menuSteam_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/steam.png"/>
+                </DockPanel>
             </Border>
         </Grid>
     </Grid>

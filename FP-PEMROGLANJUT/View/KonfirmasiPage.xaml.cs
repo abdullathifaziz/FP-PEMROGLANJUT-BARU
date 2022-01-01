@@ -22,5 +22,16 @@ namespace FP_PEMROGLANJUT.View
         {
             InitializeComponent();
         }
+
+        private void Button_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            HasilTransaksiPage hasilTransaksiPage = new HasilTransaksiPage();
+            NavigationService.Navigate(hasilTransaksiPage);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

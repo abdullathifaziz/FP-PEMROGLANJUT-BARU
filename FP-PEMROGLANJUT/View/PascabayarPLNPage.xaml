@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="585" d:DesignWidth="992"
       Title="PascabayarPLNPage">
 
     <Grid>
@@ -13,6 +13,18 @@
             <RowDefinition Height="19*"/>
             <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="150,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            </Border>
+        </Grid>
+
         <Label Content="Token PLN" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="426" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Righteous"/>
 
         <Border Background="#14279B" Width="700" Grid.Row="1" Height="211" VerticalAlignment="Top" CornerRadius="10">

@@ -82,5 +82,10 @@ namespace FP_PEMROGLANJUT.View
 
             NavigationService.Navigate(pilihStreamingPage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

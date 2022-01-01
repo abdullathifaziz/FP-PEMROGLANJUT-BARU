@@ -28,5 +28,16 @@ namespace FP_PEMROGLANJUT.View
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            IsiUlangPage isiUlangPage = new IsiUlangPage();
+            NavigationService.Navigate(isiUlangPage);
+        }
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

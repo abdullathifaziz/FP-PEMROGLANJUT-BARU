@@ -728,5 +728,11 @@ namespace FP_PEMROGLANJUT.View
 
             NavigationService.Navigate(pilihPaketDataPage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            IsiUlangPage isiUlangPage = new IsiUlangPage();
+            NavigationService.Navigate(isiUlangPage);
+        }
     }
 }

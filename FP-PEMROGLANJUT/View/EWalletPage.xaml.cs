@@ -44,5 +44,10 @@ namespace FP_PEMROGLANJUT.View
             NoEWalletPage noEWalletPage = new NoEWalletPage();
             NavigationService.Navigate(noEWalletPage);
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
