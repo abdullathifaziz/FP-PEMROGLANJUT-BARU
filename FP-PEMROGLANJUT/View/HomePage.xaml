@@ -32,33 +32,27 @@
             </Grid.RowDefinitions>
 
             <Border Grid.Column="1" Grid.Row="1" Background="#14279B" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="1" x:Name="menuIsiUlangUtama" Height="150" Style="{DynamicResource MenuDockPanel}" MouseDown="menuIsiUlangUtama_MouseDown" Grid.Column="1">
-                        <Image Width="60" Height="60"
+                <DockPanel Grid.Row="1" x:Name="menuIsiUlangUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" MouseDown="menuIsiUlangUtama_MouseDown" Grid.Column="1">
+                    <Image Width="60" Height="60"
                             VerticalAlignment="Center" HorizontalAlignment="Center"
                             Source="/Images/isiulang.png"/>
-                    </DockPanel>
-                </Grid>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="3" Grid.Row="1" Background="#14279B" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama" Height="150" Style="{DynamicResource MenuDockPanel}" MouseDown="menuTagihanUtama_MouseDown">
-                        <Image Width="60" Height="60"
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" MouseDown="menuTagihanUtama_MouseDown">
+                    <Image Width="60" Height="60"
                     VerticalAlignment="Center" HorizontalAlignment="Center"
                     Source="/Images/tagihan.png"/>
-                    </DockPanel>
-                </Grid>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="5" Grid.Row="1" Background="#14279B" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="1" x:Name="menuTagihanUtama_Copy" Height="150" Style="{DynamicResource MenuDockPanel}" MouseDown="menuTagihanUtama_MouseDown" Grid.Column="5">
-                        <Image Width="60" Height="60"
+                <DockPanel Grid.Row="1" x:Name="menuHiburanUtama" Height="140" Width="230" Style="{DynamicResource MenuDockPanel}" MouseDown="menuHiburanUtama_MouseDown" Grid.Column="5">
+                    <Image Width="60" Height="60"
                         VerticalAlignment="Center" HorizontalAlignment="Center"
                         Source="/Images/hiburan.png"/>
-                    </DockPanel>
-                </Grid>
+                </DockPanel>
             </Border>
         </Grid>
         <Label Content="SELAMAT DATANG" Foreground="White" FontSize="36" Margin="0,80,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous"/>

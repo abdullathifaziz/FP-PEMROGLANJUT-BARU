@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="585" d:DesignWidth="992"
       Title="IsiUlangPage">
 
     <Grid>
@@ -26,43 +26,35 @@
             </Grid.RowDefinitions>
 
             <Border Grid.Column="0" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuPulsa" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPulsa_MouseDown">
-                        <Image Height="60"
+                <DockPanel x:Name="menuPulsa" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPulsa_MouseDown">
+                    <Image Height="60"
                             VerticalAlignment="Center" HorizontalAlignment="Center" 
                             Source="/Images/pulsa.png"/>
-                    </DockPanel>
-                </Grid>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuPaketData" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketData_MouseDown">
-                        <Image Height="60"
+                <DockPanel x:Name="menuPaketData" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketData_MouseDown">
+                    <Image Height="60"
                             VerticalAlignment="Center" HorizontalAlignment="Center" 
                             Source="/Images/paketdata.png"/>
-                    </DockPanel>
-                </Grid>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="0" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuPascabayar" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPascabayar_MouseDown">
-                        <Image Height="60"
+                <DockPanel x:Name="menuPascabayar" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPascabayar_MouseDown">
+                    <Image Height="60"
                             VerticalAlignment="Center" HorizontalAlignment="Center" 
                             Source="/Images/pascabayar.png"/>
-                    </DockPanel>
-                </Grid>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuEWallet" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuEWallet_MouseDown">
-                        <Image Height="60"
+                <DockPanel x:Name="menuEWallet" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" MouseDown="menuEWallet_MouseDown">
+                    <Image Height="60"
                             VerticalAlignment="Center" HorizontalAlignment="Center" 
                             Source="/Images/ewallet.png"/>
-                    </DockPanel>
-                </Grid>
+                </DockPanel>
             </Border>
         </Grid>
         
