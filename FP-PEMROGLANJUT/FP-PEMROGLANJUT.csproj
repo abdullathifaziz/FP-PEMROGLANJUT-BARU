@@ -1,0 +1,179 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>FP_PEMROGLANJUT</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Righteous-Regular.ttf" />
+    <None Remove="Images\airpdam.png" />
+    <None Remove="Images\alfamart.png" />
+    <None Remove="Images\aov.png" />
+    <None Remove="Images\aov_color.png" />
+    <None Remove="Images\axis.png" />
+    <None Remove="Images\axis_color.png" />
+    <None Remove="Images\beranda.png" />
+    <None Remove="Images\berhasil.png" />
+    <None Remove="Images\byu.png" />
+    <None Remove="Images\byu_color.png" />
+    <None Remove="Images\carrefour.png" />
+    <None Remove="Images\cek.png" />
+    <None Remove="Images\dana.png" />
+    <None Remove="Images\ewallet.png" />
+    <None Remove="Images\exit.png" />
+    <None Remove="Images\flexi.png" />
+    <None Remove="Images\flexi_color.png" />
+    <None Remove="Images\freefire.png" />
+    <None Remove="Images\gagal.png" />
+    <None Remove="Images\game.png" />
+    <None Remove="Images\gopay.png" />
+    <None Remove="Images\gramedia.png" />
+    <None Remove="Images\hiburan.png" />
+    <None Remove="Images\iflix.png" />
+    <None Remove="Images\iflix_color.png" />
+    <None Remove="Images\indomaret.png" />
+    <None Remove="Images\indosat.png" />
+    <None Remove="Images\indosat_color.png" />
+    <None Remove="Images\internet.png" />
+    <None Remove="Images\isiulang 1.png" />
+    <None Remove="Images\isiulang.png" />
+    <None Remove="Images\k24klik.png" />
+    <None Remove="Images\linkaja.png" />
+    <None Remove="Images\listrikpln.png" />
+    <None Remove="Images\logo kecil.png" />
+    <None Remove="Images\logout.png" />
+    <None Remove="Images\maxstream.png" />
+    <None Remove="Images\maxstream_color.png" />
+    <None Remove="Images\ml.png" />
+    <None Remove="Images\ml_color.png" />
+    <None Remove="Images\netflix.png" />
+    <None Remove="Images\netflix_color.png" />
+    <None Remove="Images\nomor.png" />
+    <None Remove="Images\oyo.png" />
+    <None Remove="Images\paketdata.png" />
+    <None Remove="Images\pascabayar.png" />
+    <None Remove="Images\pascabayarpln.png" />
+    <None Remove="Images\pengaturan.png" />
+    <None Remove="Images\periode.png" />
+    <None Remove="Images\profil.png" />
+    <None Remove="Images\pubg.png" />
+    <None Remove="Images\pubg_color.png" />
+    <None Remove="Images\pulsa.png" />
+    <None Remove="Images\reddoorz.png" />
+    <None Remove="Images\shopeepay.png" />
+    <None Remove="Images\smartfren.png" />
+    <None Remove="Images\smartfren_color.png" />
+    <None Remove="Images\steam.png" />
+    <None Remove="Images\steam_color.png" />
+    <None Remove="Images\streaming.png" />
+    <None Remove="Images\tagihan.png" />
+    <None Remove="Images\telkomsel.png" />
+    <None Remove="Images\telkomsel_color.png" />
+    <None Remove="Images\tiketcom.png" />
+    <None Remove="Images\tokenlistrik.png" />
+    <None Remove="Images\totaltagihan.png" />
+    <None Remove="Images\tri.png" />
+    <None Remove="Images\tri_color.png" />
+    <None Remove="Images\vidio.png" />
+    <None Remove="Images\vidio_color.png" />
+    <None Remove="Images\viu.png" />
+    <None Remove="Images\viu_color.png" />
+    <None Remove="Images\voucher.png" />
+    <None Remove="Images\xl.png" />
+    <None Remove="Images\xl_color.png" />
+    <None Remove="View\LOGO PAYME.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Righteous-Regular.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\airpdam.png" />
+    <Resource Include="Images\alfamart.png" />
+    <Resource Include="Images\aov.png" />
+    <Resource Include="Images\aov_color.png" />
+    <Resource Include="Images\axis.png" />
+    <Resource Include="Images\axis_color.png" />
+    <Resource Include="Images\beranda.png" />
+    <Resource Include="Images\berhasil.png" />
+    <Resource Include="Images\byu.png" />
+    <Resource Include="Images\byu_color.png" />
+    <Resource Include="Images\carrefour.png" />
+    <Resource Include="Images\cek.png" />
+    <Resource Include="Images\dana.png" />
+    <Resource Include="Images\ewallet.png" />
+    <Resource Include="Images\exit.png" />
+    <Resource Include="Images\flexi.png" />
+    <Resource Include="Images\flexi_color.png" />
+    <Resource Include="Images\freefire.png" />
+    <Resource Include="Images\gagal.png" />
+    <Resource Include="Images\game.png" />
+    <Resource Include="Images\gopay.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\gramedia.png" />
+    <Resource Include="Images\hiburan.png" />
+    <Resource Include="Images\iflix.png" />
+    <Resource Include="Images\iflix_color.png" />
+    <Resource Include="Images\indomaret.png" />
+    <Resource Include="Images\indosat.png" />
+    <Resource Include="Images\indosat_color.png" />
+    <Resource Include="Images\internet.png" />
+    <Resource Include="Images\isiulang 1.png" />
+    <Resource Include="Images\isiulang.png" />
+    <Resource Include="Images\k24klik.png" />
+    <Resource Include="Images\linkaja.png" />
+    <Resource Include="Images\listrikpln.png" />
+    <Resource Include="Images\logo kecil.png" />
+    <Resource Include="Images\LOGO PAYME.png" />
+    <Resource Include="Images\logout.png" />
+    <Resource Include="Images\maxstream.png" />
+    <Resource Include="Images\maxstream_color.png" />
+    <Resource Include="Images\ml.png" />
+    <Resource Include="Images\ml_color.png" />
+    <Resource Include="Images\netflix.png" />
+    <Resource Include="Images\netflix_color.png" />
+    <Resource Include="Images\nomor.png" />
+    <Resource Include="Images\oyo.png" />
+    <Resource Include="Images\paketdata.png" />
+    <Resource Include="Images\pascabayar.png" />
+    <Resource Include="Images\pascabayarpln.png" />
+    <Resource Include="Images\pengaturan.png" />
+    <Resource Include="Images\periode.png" />
+    <Resource Include="Images\profil.png" />
+    <Resource Include="Images\pubg.png" />
+    <Resource Include="Images\pubg_color.png" />
+    <Resource Include="Images\pulsa.png" />
+    <Resource Include="Images\reddoorz.png" />
+    <Resource Include="Images\shopeepay.png" />
+    <Resource Include="Images\smartfren.png" />
+    <Resource Include="Images\smartfren_color.png" />
+    <Resource Include="Images\steam.png" />
+    <Resource Include="Images\steam_color.png" />
+    <Resource Include="Images\streaming.png" />
+    <Resource Include="Images\tagihan.png" />
+    <Resource Include="Images\telkomsel.png" />
+    <Resource Include="Images\telkomsel_color.png" />
+    <Resource Include="Images\tiketcom.png" />
+    <Resource Include="Images\tokenlistrik.png" />
+    <Resource Include="Images\totaltagihan.png" />
+    <Resource Include="Images\tri.png" />
+    <Resource Include="Images\tri_color.png" />
+    <Resource Include="Images\vidio.png" />
+    <Resource Include="Images\vidio_color.png" />
+    <Resource Include="Images\viu.png" />
+    <Resource Include="Images\viu_color.png" />
+    <Resource Include="Images\voucher.png" />
+    <Resource Include="Images\xl.png" />
+    <Resource Include="Images\xl_color.png" />
+
+  </ItemGroup>
+
+</Project>

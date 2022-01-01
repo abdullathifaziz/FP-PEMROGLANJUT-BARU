@@ -1,0 +1,49 @@
+﻿<Page x:Class="FP_PEMROGLANJUT.View.PembayaranPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PembayaranPage">
+
+    <Border Background="#14279B" Width="770" Height="350" CornerRadius="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="64*"/>
+                <ColumnDefinition Width="105*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border BorderBrush="White" BorderThickness="1" Width="156" Height="156" CornerRadius="10">
+                <Image Source="/Images/xl.png" />
+            </Border>
+
+            <Border Grid.Column="1" Margin="0,32,32,32" BorderBrush="White" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="11*"/>
+                        <RowDefinition Height="64*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Content="PEMBAYARAN" FontSize="24" Foreground="White" FontFamily="Righteous" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                    <Grid Grid.Row="1" Background="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Content="Paket Yang Di Pilih" FontSize="18" FontFamily="Righteous" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
+                        <Label Grid.Row="1" Content="XL KUOTA DATA 10 GB" FontSize="18" FontFamily="Righteous" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
+                        <Label Grid.Row="2" Content="No Pelanggan" FontSize="18" FontFamily="Righteous" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
+                        <Label Grid.Row="3" Content="123456789xxx" FontSize="18" FontFamily="Righteous" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
+                        <Button x:Name="btnBayar" Click="btnBayar_Click" Content="Bayar" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" FontSize="18" Width="270" Height="32" Background="#FF797EF6" Foreground="White" FontFamily="Righteous"/>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Page>
