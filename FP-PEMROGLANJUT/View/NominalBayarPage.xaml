@@ -20,12 +20,25 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="100,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" 
+             HorizontalAlignment="Left" Margin="100,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" 
+                 Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" 
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
-        <Label Content="Uang yang harus dibayar" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="470" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Righteous"/>
+        <Label Content="Uang yang harus dibayar" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="470" VerticalContentAlignment="Center" 
+         HorizontalContentAlignment="Center" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="21*"/>
@@ -39,6 +52,9 @@
             </Grid.RowDefinitions>
 
             <Border Background="#14279B" Grid.Column="1" VerticalAlignment="Bottom" CornerRadius="10" Height="168">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="88*"/>
@@ -49,28 +65,36 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Label Content="Rp" Background="White" VerticalAlignment="Center" FontSize="18" Padding="16,16,16,16" FontFamily="Righteous" Height="62" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,0,10,0">
+                    <Label Content="Rp" Background="White" VerticalAlignment="Center" FontSize="18" 
+                     Padding="16,16,16,16" FontFamily="Righteous" Height="62" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center" Margin="10,0,10,0">
                         <Label.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>
                             </Style>
                         </Label.Resources>
                     </Label>
-                    <TextBox Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Padding="16,16,16,16" FontFamily="Righteous" Height="62" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="10,0,10,0">
+                    <TextBox Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" VerticalAlignment="Center" 
+                     FontSize="18" Padding="16,16,16,16" FontFamily="Righteous" Height="62" 
+                     HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="10,0,10,0">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>
                             </Style>
                         </TextBox.Resources>
                     </TextBox>
-                    <Button x:Name="btnTunai" Click="btnTunai_Click" Content="Tunai" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="18" Margin="12,0,12,0" Height="58"  Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
+                    <Button x:Name="btnTunai" Click="btnTunai_Click" Content="Tunai" HorizontalAlignment="Stretch" 
+                     Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="18" 
+                     Margin="12,0,12,0" Height="58"  Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <Button x:Name="btnNonTunai" Click="btnNonTunai_Click" Content="Non-Tunai" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" FontSize="18" Margin="12,0,12,0" Height="58" Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
+                    <Button x:Name="btnNonTunai" Click="btnNonTunai_Click" Content="Non-Tunai" 
+                     HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" FontSize="18" 
+                     Margin="12,0,12,0" Height="58" Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>
@@ -79,7 +103,12 @@
                     </Button>
                 </Grid>
             </Border>
-            <Label Content="Pastikan uang anda sudah diterima untuk menghindari penipuan" Foreground="White" FontSize="18" Background="#14279B" Margin="0,10,0,10" Grid.Row="1" Grid.Column="1" FontFamily="Righteous" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <Label Content="Pastikan uang anda sudah diterima untuk menghindari penipuan" Foreground="White" 
+             FontSize="18" Background="#14279B" Margin="0,10,0,10" Grid.Row="1" Grid.Column="1" FontFamily="Righteous" 
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Label.Effect>
                 <Label.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>

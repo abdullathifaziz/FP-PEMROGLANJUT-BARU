@@ -20,12 +20,25 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100"
+             HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90"
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
-        <Label Content="Pulsa" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="158" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="{DynamicResource Righteous}"/>
+        <Label Content="Pulsa" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center"
+         FontWeight="Bold" Height="58" Width="158" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+         FontFamily="{DynamicResource Righteous}">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
         <Grid Width="700" Height="350" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -39,69 +52,77 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuXL" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuXL_MouseDown">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/xl.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuXL" Height="90" Style="{DynamicResource MenuDockPanel}"
+                 MouseDown="menuXL_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/xl.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama1" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/indosat.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama1" Height="90" Style="{DynamicResource MenuDockPanel}">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/indosat.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="2" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama2" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tri.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama2" Height="90" Style="{DynamicResource MenuDockPanel}">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tri.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="3" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama3" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/telkomsel.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama3" Height="90" Style="{DynamicResource MenuDockPanel}">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/telkomsel.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="0" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama4" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/smartfren.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama4" Height="90" Style="{DynamicResource MenuDockPanel}">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/smartfren.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama5" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/axis.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama5" Height="90" Style="{DynamicResource MenuDockPanel}">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/axis.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="2" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama6" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/byu.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama6" Height="90" Style="{DynamicResource MenuDockPanel}">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/byu.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="3" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTagihanUtama7" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/flexi.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel Grid.Row="2" x:Name="menuTagihanUtama7" Height="90" Style="{DynamicResource MenuDockPanel}">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/flexi.png"/>
+                </DockPanel>
             </Border>
         </Grid>
-        
     </Grid>
 </Page>

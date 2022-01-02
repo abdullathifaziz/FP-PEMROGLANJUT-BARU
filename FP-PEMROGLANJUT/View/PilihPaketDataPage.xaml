@@ -20,8 +20,14 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100"
+             HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90"
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
@@ -46,6 +52,9 @@
             </Grid.ColumnDefinitions>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="0" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL1" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL1" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="Xtra Combo"/><LineBreak/><Run Text="5 GB + 10 GB YT"/></TextBlock>
@@ -75,6 +84,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="1" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL2" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL2" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="Xtra Combo"/><LineBreak/><Run Text="5 GB + 30 GB YT"/></TextBlock>
@@ -104,6 +116,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="2" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL3" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL3" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="HotRod"/><LineBreak/><Run Text="1 GB 7 Hari"/></TextBlock>
@@ -133,6 +148,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="3" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL4" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL4" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="HotRod"/><LineBreak/><Run Text="3 GB 10 Hari"/></TextBlock>
@@ -162,6 +180,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="0" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL5" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL5" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="Data Pure"/><LineBreak/><Run Text="3 GB 30 Hari"/></TextBlock>
@@ -191,6 +212,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="1" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL6" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL6" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="Data Pure"/><LineBreak/><Run Text="8 GB 30 Hari"/></TextBlock>
@@ -220,6 +244,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="2" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL7" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL7" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="Xtra Kuota"/><LineBreak/><Run Text="Midnight 5 GB"/></TextBlock>
@@ -249,6 +276,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="3" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPaketXL8" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <TextBlock x:Name="paketXL8" Visibility="Visible" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"><Run Text="Xtra Kuota"/><LineBreak/><Run Text="30 GB"/></TextBlock>

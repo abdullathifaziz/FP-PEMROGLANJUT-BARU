@@ -20,8 +20,14 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100"
+             HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90"
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
@@ -37,42 +43,60 @@
             </Grid.RowDefinitions>
 
             <Border Grid.Column="0" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuPulsa" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label x:Name="nominal1" Content="7 Hari" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuPulsa" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}">
+                    <Label x:Name="nominal1" Content="7 Hari" HorizontalAlignment="Center" VerticalAlignment="Center"
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuPaketData" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label x:Name="paket2" Content="30 Hari" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuPaketData" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}">
+                    <Label x:Name="paket2" Content="30 Hari" HorizontalAlignment="Center" VerticalAlignment="Center"
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="0" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuPascabayar" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label x:Name="paket3" Content="90 Hari" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuPascabayar" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}">
+                    <Label x:Name="paket3" Content="90 Hari" HorizontalAlignment="Center" VerticalAlignment="Center"
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
-                <Grid>
-                    <DockPanel x:Name="menuEWallet" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <TextBlock x:Name="paket4" HorizontalAlignment="Center" TextAlignment="Center" Width="200" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"><Run Text="1 Tahun"/><LineBreak/><Run Text="Permanent"/></TextBlock>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuEWallet" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}">
+                    <TextBlock x:Name="paket4" HorizontalAlignment="Center" TextAlignment="Center" Width="200"
+                     VerticalAlignment="Center" Foreground="White" FontFamily="Righteous"
+                     FontSize="18"><Run Text="1 Tahun"/><LineBreak/><Run Text="Permanent"/></TextBlock>
+                </DockPanel>
             </Border>
         </Grid>
 
-        <Image Grid.Row="0" x:Name="logoNetflix" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/netflix_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoiFlix" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/iflix_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoVidio" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/vidio_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoViu" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/viu_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoMaxStream" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/maxstream_color.png"/>
+        <Image Grid.Row="0" x:Name="logoNetflix" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"
+         Source="/Images/netflix_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoiFlix" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/iflix_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoVidio" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/vidio_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoViu" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/viu_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoMaxStream" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/maxstream_color.png"/>
     </Grid>
 </Page>

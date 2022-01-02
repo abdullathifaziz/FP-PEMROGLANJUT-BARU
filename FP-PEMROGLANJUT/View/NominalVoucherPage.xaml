@@ -20,12 +20,25 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="120,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" 
+             HorizontalAlignment="Left" Margin="120,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" 
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
-        <Label Content="Nominal" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="158" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Righteous"/>
+        <Label Content="Nominal" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="158" VerticalContentAlignment="Center" 
+         HorizontalContentAlignment="Center" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
         <Grid Grid.Row="1" Width="770" Height="350">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -39,67 +52,83 @@
             </Grid.ColumnDefinitions>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="0" Grid.Row="0" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal5000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label x:Name="nominal1" Content="Rp. 5.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal5000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label x:Name="nominal1" Content="Rp. 5.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="1" Grid.Row="0" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal10000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label Content="Rp. 10.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal10000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label Content="Rp. 10.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="2" Grid.Row="0" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal15000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label Content="Rp. 20.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal15000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label Content="Rp. 20.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="3" Grid.Row="0" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal20000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label Content="Rp. 50.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal20000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label Content="Rp. 50.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="0" Grid.Row="1" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal35000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label Content="Rp. 100.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal35000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label Content="Rp. 100.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="1" Grid.Row="1" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal50000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label Content="Rp. 150.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal50000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label Content="Rp. 150.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="2" Grid.Row="1" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal100000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label Content="Rp. 300.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal100000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label Content="Rp. 300.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="3" Grid.Row="1" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuNominal150000" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label Content="Rp. 500.000" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuNominal150000" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}">
+                    <Label Content="Rp. 500.000" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                     Foreground="White" FontFamily="Righteous" FontSize="18"/>
+                </DockPanel>
             </Border>
         </Grid>
     </Grid>

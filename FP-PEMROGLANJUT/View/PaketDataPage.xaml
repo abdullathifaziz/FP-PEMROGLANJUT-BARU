@@ -20,15 +20,20 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" 
+             HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" 
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
-        <Label Content="Paket Data" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="227" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="{DynamicResource Righteous}">
+        <Label Content="Paket Data" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="227" VerticalContentAlignment="Center" 
+         HorizontalContentAlignment="Center" FontFamily="{DynamicResource Righteous}">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
             </Label.Effect>
@@ -49,7 +54,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataXL" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataXL_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataXL" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataXL_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/xl.png"/>
                 </DockPanel>
             </Border>
@@ -58,7 +64,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataIndosat" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataIndosat_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataIndosat" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataIndosat_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/indosat.png"/>
                 </DockPanel>
             </Border>
@@ -67,7 +74,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataTri" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataTri_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataTri" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataTri_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tri.png"/>
                 </DockPanel>
             </Border>
@@ -76,7 +84,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataTelkomsel" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataTelkomsel_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataTelkomsel" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataTelkomsel_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/telkomsel.png"/>
                 </DockPanel>
             </Border>
@@ -85,7 +94,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataSmartfren" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataSmartfren_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataSmartfren" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataSmartfren_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/smartfren.png"/>
                 </DockPanel>
             </Border>
@@ -94,7 +104,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataAxis" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataAxis_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataAxis" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataAxis_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/axis.png"/>
                 </DockPanel>
             </Border>
@@ -103,7 +114,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataByu" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataByu_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataByu" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataByu_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/byu.png"/>
                 </DockPanel>
             </Border>
@@ -112,7 +124,8 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataFlexi" Height="145" Width="145" Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataFlexi_MouseDown">
+                <DockPanel Grid.Row="2" x:Name="menuPaketDataFlexi" Height="145" Width="145" 
+                 Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataFlexi_MouseDown">
                     <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/flexi.png"/>
                 </DockPanel>
             </Border>

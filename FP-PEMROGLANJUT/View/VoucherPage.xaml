@@ -20,12 +20,25 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="125,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100"
+             HorizontalAlignment="Left" Margin="125,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90"
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
-        <Label Content="Voucher" Foreground="White" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="227" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="{DynamicResource Righteous}"/>
+        <Label Content="Voucher" Foreground="White" FontSize="36" HorizontalAlignment="Center"
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="227" VerticalContentAlignment="Center"
+         HorizontalContentAlignment="Center" FontFamily="{DynamicResource Righteous}">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
         <Grid Width="770" Height="350" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -39,83 +52,75 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuIndomaret" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuIndomaret_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/indomaret.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuIndomaret" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuIndomaret_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/indomaret.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuAlfamart" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuAlfamart_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/alfamart.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuAlfamart" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuAlfamart_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/alfamart.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="2" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuOyo" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuOyo_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/oyo.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuOyo" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuOyo_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/oyo.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="3" Grid.Row="0" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuRedDoorz" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuRedDoorz_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/reddoorz.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuRedDoorz" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuRedDoorz_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/reddoorz.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="0" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuCarrefour" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuCarrefour_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/carrefour.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuCarrefour" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuCarrefour_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/carrefour.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="1" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuGramedia" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuGramedia_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/gramedia.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuGramedia" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuGramedia_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/gramedia.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="2" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuK24Klik" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuK24Klik_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/k24klik.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuK24Klik" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuK24Klik_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/k24klik.png"/>
+                </DockPanel>
             </Border>
 
             <Border Grid.Column="3" Grid.Row="1" Background="#14279B" Margin="10,10,10,10" CornerRadius="10">
-                <Grid>
-                    <DockPanel Grid.Row="2" x:Name="menuTiket" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuTiket_MouseDown">
-                        <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/tiketcom.png"/>
-                    </DockPanel>
-                </Grid>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <DockPanel x:Name="menuTiket" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}" MouseDown="menuTiket_MouseDown">
+                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tiketcom.png"/>
+                </DockPanel>
             </Border>
         </Grid>
     </Grid>

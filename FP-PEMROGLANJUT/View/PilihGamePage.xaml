@@ -20,16 +20,31 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown" >
-                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90" Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="50" Width="100" 
+             HorizontalAlignment="Left" Margin="155,10,10,10" CornerRadius="10" MouseDown="Border_MouseDown">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
+                <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="90"
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
 
-        <Image Grid.Row="0" x:Name="logoPubg" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/pubg_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoML" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/ml_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoFreeFire" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/freefire_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoAOV" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/aov_color.png"/>
-        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoSteam" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/steam_color.png"/>
+        <Image Grid.Row="0" x:Name="logoPubg" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"
+         Source="/Images/pubg_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoML" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/ml_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoFreeFire" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/freefire_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoAOV" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/aov_color.png"/>
+        
+        <Image Grid.Row="0" Visibility="Hidden" x:Name="logoSteam" Height="100" VerticalAlignment="Center"
+         HorizontalAlignment="Center" Source="/Images/steam_color.png"/>
         
         <Grid Width="700" Height="350" Grid.Row="1" Visibility="Visible">
             <Grid.RowDefinitions>
@@ -44,46 +59,90 @@
             </Grid.ColumnDefinitions>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="0" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg1" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label x:Name="paketPubg1" Content="263" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                        <Label x:Name="paketPubg1" Content="263" Visibility="Visible" HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" 
+                         Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuML1" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketML1" Content="112" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    
+                    <DockPanel Grid.Row="2" x:Name="menuML1" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketML1" Content="112" Visibility="Visible" HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"
+                         Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuFreeFire1" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketFreeFire1" Content="50" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    
+                    <DockPanel Grid.Row="2" x:Name="menuFreeFire1" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketFreeFire1" Content="50" Visibility="Visible"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"
+                         FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuAOV1" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketAOV1" Content="40" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    
+                    <DockPanel Grid.Row="2" x:Name="menuAOV1" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketAOV1" Content="40" Visibility="Visible" HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"
+                         Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuSteam1" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketSteam1" Content="IDR 8.000" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    
+                    <DockPanel Grid.Row="2" x:Name="menuSteam1" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketSteam1" Content="IDR 8.000" Visibility="Visible"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"
+                         FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
                     </DockPanel>
                 </Grid>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="1" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg2" Height="90" Style="{DynamicResource MenuDockPanel}">
-                        <Label x:Name="paketPubg2" Content="525" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                        <Label x:Name="paketPubg2" Content="525" Visibility="Visible" HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"
+                         Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuML2" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketML2" Content="222" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    
+                    <DockPanel Grid.Row="2" x:Name="menuML2" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketML2" Content="222" Visibility="Visible" HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"
+                         Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuFreeFire2" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketFreeFire2" Content="70" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    
+                    <DockPanel Grid.Row="2" x:Name="menuFreeFire2" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketFreeFire2" Content="70" Visibility="Visible"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"
+                         FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuAOV2" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketAOV2" Content="90" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    
+                    <DockPanel Grid.Row="2" x:Name="menuAOV2" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketAOV2" Content="90" Visibility="Visible" HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18"
+                         Width="144" Height="46"/>
                     </DockPanel>
-                    <DockPanel Grid.Row="2" x:Name="menuSteam2" Visibility="Hidden" Height="90" Style="{DynamicResource MenuDockPanel}" >
-                        <Label x:Name="paketSteam2" Content="IDR 12.000" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
+                    <DockPanel Grid.Row="2" x:Name="menuSteam2" Visibility="Hidden" Height="90"
+                     Style="{DynamicResource MenuDockPanel}" >
+                        <Label x:Name="paketSteam2" Content="IDR 12.000" Visibility="Visible"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" 
+                         FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
                     </DockPanel>
                 </Grid>
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="2" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg3" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <Label x:Name="paketPubg3" Content="788" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
@@ -104,6 +163,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="3" Grid.Row="0" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg4" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <Label x:Name="paketPubg4" Content="1050" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
@@ -124,6 +186,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="0" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg5" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <Label x:Name="paketPubg5" Content="1375" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
@@ -144,6 +209,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="1" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg6" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <Label x:Name="paketPubg6" Content="1639" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
@@ -164,6 +232,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="2" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg7" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <Label x:Name="paketPubg7" Content="1900" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
@@ -184,6 +255,9 @@
             </Border>
 
             <Border Background="#14279B" Margin="10,10,10,10" Grid.Column="3" Grid.Row="1" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                </Border.Effect>
                 <Grid>
                     <DockPanel Grid.Row="2" x:Name="menuPubg8" Height="90" Style="{DynamicResource MenuDockPanel}">
                         <Label x:Name="paketPubg8" Content="2163" Visibility="Visible" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Righteous" FontSize="18" Width="144" Height="46"/>
