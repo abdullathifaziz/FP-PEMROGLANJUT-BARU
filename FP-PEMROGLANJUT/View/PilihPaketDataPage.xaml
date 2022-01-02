@@ -31,7 +31,7 @@
             </Border>
         </Grid>
 
-        <Image Grid.Row="0" x:Name="logoXL" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/axis_color.png"/>
+        <Image Grid.Row="0" x:Name="logoXL" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/xl_color.png"/>
         <Image Grid.Row="0" x:Name="logoIndosat" Visibility="Hidden" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/indosat_color.png"/>
         <Image Grid.Row="0" x:Name="logoTri" Visibility="Hidden" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tri_color.png"/>
         <Image Grid.Row="0" x:Name="logoTelkomsel" Visibility="Hidden" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/telkomsel_color.png"/>
