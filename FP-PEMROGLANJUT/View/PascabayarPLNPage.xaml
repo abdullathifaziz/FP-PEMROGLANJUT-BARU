@@ -31,7 +31,7 @@
             </Border>
         </Grid>
 
-        <Label Content="Token PLN" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
+        <Label Content="Pascabayar PLN" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
          VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="426" VerticalContentAlignment="Center" 
          HorizontalContentAlignment="Center" FontFamily="Righteous">
             <Label.Effect>
@@ -39,7 +39,7 @@
             </Label.Effect>
         </Label>
 
-        <Border Background="#14279B" Width="700" Grid.Row="1" Height="211" VerticalAlignment="Top" CornerRadius="10">
+        <Border Background="#14279B" Width="600" Grid.Row="1" Height="211" VerticalAlignment="Top" CornerRadius="10">
             <Border.Effect>
                 <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
             </Border.Effect>
@@ -50,12 +50,12 @@
                     <RowDefinition Height="67*"/>
                 </Grid.RowDefinitions>
 
-                <Label Grid.Row="0" Content="Masukkan ID Pelanggan" Foreground="White" FontSize="18" 
-                 FontFamily="Righteous" Margin="10,10,10,10" />
+                <Label Grid.Row="0" Content="Masukkan ID Pelanggan" Foreground="White" FontSize="20" 
+                 FontFamily="Righteous" Margin="20,10,20,10" FontWeight="Bold"/>
 
-                <TextBox Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Padding="16,16,16,16" 
-                 FontFamily="Righteous" Height="62" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                 Margin="10,0,10,0">
+                <TextBox x:Name="idPascabayarPelangganPln" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Padding="16,16,16,16" 
+                 FontFamily="Righteous" Height="62" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                 Margin="20,0,20,0" Text="123456789xxx" FontWeight="Bold">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -64,8 +64,8 @@
                 </TextBox>
 
                 <Button x:Name="btnCekTagihan" Click="btnCekTagihan_Click" Content="Cek Tagihan" 
-                 HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="18" Width="270"
-                 Height="57" Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
+                 HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="20" Width="270"
+                 Height="57" Background="#FF797EF6" Foreground="White" FontFamily="Righteous" FontWeight="Bold">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>

@@ -31,7 +31,50 @@ namespace FP_PEMROGLANJUT.View
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            PulsaPage pulsaPage = new PulsaPage();
+            NavigationService.Navigate(pulsaPage);
+        }
 
+        private void menuNominal10000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
+            NavigationService.Navigate(noTelpPembeliPage);
+        }
+
+        private void menuNominal15000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
+            NavigationService.Navigate(noTelpPembeliPage);
+        }
+
+        private void menuNominal20000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
+            NavigationService.Navigate(noTelpPembeliPage);
+        }
+
+        private void menuNominal35000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
+            NavigationService.Navigate(noTelpPembeliPage);
+        }
+
+        private void menuNominal50000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
+            NavigationService.Navigate(noTelpPembeliPage);
+        }
+
+        private void menuNominal100000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
+            NavigationService.Navigate(noTelpPembeliPage);
+        }
+
+        private void menuNominal150000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
+            NavigationService.Navigate(noTelpPembeliPage);
         }
     }
 }

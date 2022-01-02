@@ -47,7 +47,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            IsiUlangPage isiUlangPage = new IsiUlangPage();
+            NavigationService.Navigate(isiUlangPage);
         }
     }
 }

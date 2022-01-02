@@ -54,9 +54,9 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuPaketDataXL" Height="145" Width="145" 
+                <DockPanel x:Name="menuPaketDataXL" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataXL_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/xl.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/xl.png"/>
                 </DockPanel>
             </Border>
 
@@ -66,7 +66,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPaketDataIndosat" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataIndosat_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/indosat.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/indosat.png"/>
                 </DockPanel>
             </Border>
 
@@ -76,7 +76,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPaketDataTri" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataTri_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tri.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tri.png"/>
                 </DockPanel>
             </Border>
 
@@ -86,7 +86,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPaketDataTelkomsel" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataTelkomsel_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/telkomsel.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/telkomsel.png"/>
                 </DockPanel>
             </Border>
 
@@ -96,7 +96,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPaketDataSmartfren" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataSmartfren_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/smartfren.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/smartfren.png"/>
                 </DockPanel>
             </Border>
 
@@ -106,7 +106,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPaketDataAxis" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataAxis_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/axis.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/axis.png"/>
                 </DockPanel>
             </Border>
 
@@ -116,7 +116,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPaketDataByu" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataByu_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/byu.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/by u.png"/>
                 </DockPanel>
             </Border>
 
@@ -126,7 +126,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPaketDataFlexi" Height="145" Width="145" 
                  Style="{DynamicResource MenuDockPanel}" MouseDown="menuPaketDataFlexi_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/flexi.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/flexi.png"/>
                 </DockPanel>
             </Border>
         </Grid>

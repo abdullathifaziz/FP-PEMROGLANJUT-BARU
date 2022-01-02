@@ -17,20 +17,28 @@
     <None Remove="Images\axis_color.png" />
     <None Remove="Images\beranda.png" />
     <None Remove="Images\berhasil.png" />
+    <None Remove="Images\by u.png" />
+    <None Remove="Images\byu_color.png" />
     <None Remove="Images\carrefour.png" />
     <None Remove="Images\cek.png" />
+    <None Remove="Images\dana.png" />
     <None Remove="Images\ewallet.png" />
     <None Remove="Images\exit.png" />
+    <None Remove="Images\flexi.png" />
     <None Remove="Images\flexi_color.png" />
     <None Remove="Images\freefire.png" />
+    <None Remove="Images\freefire_color.png" />
     <None Remove="Images\gagal.png" />
     <None Remove="Images\game.png" />
+    <None Remove="Images\gopay.png" />
     <None Remove="Images\gramedia.png" />
     <None Remove="Images\hiburan.png" />
     <None Remove="Images\iflix.png" />
     <None Remove="Images\iflix_color.png" />
     <None Remove="Images\indomaret.png" />
+    <None Remove="Images\indosat.png" />
     <None Remove="Images\indosat_color.png" />
+    <None Remove="Images\internet.png" />
     <None Remove="Images\isiulang 1.png" />
     <None Remove="Images\isiulang.png" />
     <None Remove="Images\k24klik.png" />
@@ -54,6 +62,7 @@
     <None Remove="Images\profil.png" />
     <None Remove="Images\pubg.png" />
     <None Remove="Images\pubg_color.png" />
+    <None Remove="Images\pulsa.png" />
     <None Remove="Images\reddoorz.png" />
     <None Remove="Images\shopeepay.png" />
     <None Remove="Images\smartfren.png" />
@@ -62,10 +71,12 @@
     <None Remove="Images\steam_color.png" />
     <None Remove="Images\streaming.png" />
     <None Remove="Images\tagihan.png" />
+    <None Remove="Images\telkomsel.png" />
     <None Remove="Images\telkomsel_color.png" />
     <None Remove="Images\tiketcom.png" />
-    <None Remove="Images\tokenlistrik.png" />
+    <None Remove="Images\tokenlistrikpln.png" />
     <None Remove="Images\totaltagihan.png" />
+    <None Remove="Images\tri.png" />
     <None Remove="Images\tri_color.png" />
     <None Remove="Images\vidio.png" />
     <None Remove="Images\vidio_color.png" />
@@ -75,6 +86,15 @@
     <None Remove="Images\xl.png" />
     <None Remove="Images\xl_color.png" />
     <None Remove="View\LOGO PAYME.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\byu_color.png" />
+    <Resource Include="Images\gopay.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\axis_color.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -90,15 +110,18 @@
     <Resource Include="Images\aov.png" />
     <Resource Include="Images\aov_color.png" />
     <Resource Include="Images\axis.png" />
-    <Resource Include="Images\axis_color.png" />
     <Resource Include="Images\beranda.png" />
     <Resource Include="Images\berhasil.png" />
+    <Resource Include="Images\by u.png" />
     <Resource Include="Images\carrefour.png" />
     <Resource Include="Images\cek.png" />
+    <Resource Include="Images\dana.png" />
     <Resource Include="Images\ewallet.png" />
     <Resource Include="Images\exit.png" />
+    <Resource Include="Images\flexi.png" />
     <Resource Include="Images\flexi_color.png" />
     <Resource Include="Images\freefire.png" />
+    <Resource Include="Images\freefire_color.png" />
     <Resource Include="Images\gagal.png" />
     <Resource Include="Images\game.png" />
     <Resource Include="Images\gramedia.png" />
@@ -106,7 +129,9 @@
     <Resource Include="Images\iflix.png" />
     <Resource Include="Images\iflix_color.png" />
     <Resource Include="Images\indomaret.png" />
+    <Resource Include="Images\indosat.png" />
     <Resource Include="Images\indosat_color.png" />
+    <Resource Include="Images\internet.png" />
     <Resource Include="Images\isiulang 1.png" />
     <Resource Include="Images\isiulang.png" />
     <Resource Include="Images\k24klik.png" />
@@ -131,6 +156,7 @@
     <Resource Include="Images\profil.png" />
     <Resource Include="Images\pubg.png" />
     <Resource Include="Images\pubg_color.png" />
+    <Resource Include="Images\pulsa.png" />
     <Resource Include="Images\reddoorz.png" />
     <Resource Include="Images\shopeepay.png" />
     <Resource Include="Images\smartfren.png" />
@@ -139,10 +165,12 @@
     <Resource Include="Images\steam_color.png" />
     <Resource Include="Images\streaming.png" />
     <Resource Include="Images\tagihan.png" />
+    <Resource Include="Images\telkomsel.png" />
     <Resource Include="Images\telkomsel_color.png" />
     <Resource Include="Images\tiketcom.png" />
-    <Resource Include="Images\tokenlistrik.png" />
+    <Resource Include="Images\tokenlistrikpln.png" />
     <Resource Include="Images\totaltagihan.png" />
+    <Resource Include="Images\tri.png" />
     <Resource Include="Images\tri_color.png" />
     <Resource Include="Images\vidio.png" />
     <Resource Include="Images\vidio_color.png" />

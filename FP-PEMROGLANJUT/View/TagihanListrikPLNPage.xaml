@@ -31,7 +31,7 @@
             </Border>
         </Grid>
 
-        <Grid Width="770" Height="170" Grid.Row="1">
+        <Grid Width="600" Height="170" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -41,9 +41,9 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel x:Name="menuTokenListrik" Height="135" Width="350" Style="{StaticResource MenuDockPanel}"
+                <DockPanel x:Name="menuTokenListrik" Height="135" Width="260" Style="{StaticResource MenuDockPanel}"
                  MouseDown="menuTokenListrik_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tokenlistrik.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/tokenlistrikpln.png"/>
                 </DockPanel>
             </Border>
 
@@ -51,9 +51,9 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel x:Name="menuPascabayar" Height="135" Width="350" Style="{StaticResource MenuDockPanel}"
+                <DockPanel x:Name="menuPascabayar" Height="135" Width="260" Style="{StaticResource MenuDockPanel}"
                  MouseDown="menuPascabayar_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/pascabayarpln.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/pascabayarpln.png"/>
                 </DockPanel>
             </Border>
         </Grid>

@@ -57,9 +57,9 @@
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <Button x:Name="btnSelanjutnya" Click="btnSelanjutnya_Click" Content="Selanjutnya" 
+                <Button x:Name="btnSelanjutnya" Click="btnSelanjutnya_Click" Content="CEK NOMOR" 
                  HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="18" Width="270" 
-                 Height="57" Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
+                 Height="57" Background="#FF797EF6" Foreground="White" FontFamily="Righteous" FontWeight="Bold">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>

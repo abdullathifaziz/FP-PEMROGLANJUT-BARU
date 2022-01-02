@@ -25,12 +25,12 @@ namespace FP_PEMROGLANJUT.View
 
         private void btnCekTagihan_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CekTagihanPage());
+            NavigationService.Navigate(new CekTagihanPascabayarPLNPage());
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            NavigationService.Navigate(new TagihanListrikPLNPage());
         }
     }
 }

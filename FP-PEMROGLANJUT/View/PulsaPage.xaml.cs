@@ -39,5 +39,47 @@ namespace FP_PEMROGLANJUT.View
         {
 
         }
+
+        private void menuIndosat_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
+        }
+
+        private void menuTri_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
+        }
+
+        private void menuTelkomsel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
+        }
+
+        private void menuSmartfren_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
+        }
+
+        private void menuAxis_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
+        }
+
+        private void menuByu_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
+        }
+
+        private void menuFlexi_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
+        }
     }
 }

@@ -35,7 +35,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            TagihanPage tagihanPage = new TagihanPage();
+            NavigationService.Navigate(tagihanPage);
         }
     }
 }

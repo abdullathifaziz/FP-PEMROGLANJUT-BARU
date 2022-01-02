@@ -25,7 +25,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            PascabayarPage pascabayarPage = new PascabayarPage();
+            NavigationService.Navigate(pascabayarPage);
         }
     }
 }

@@ -25,12 +25,12 @@ namespace FP_PEMROGLANJUT.View
 
         private void btnSelanjutnya_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new NominalVoucherPage());
+            NavigationService.Navigate(new NominalTokenPLNPage());
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            NavigationService.Navigate(new TagihanListrikPLNPage());
         }
     }
 }

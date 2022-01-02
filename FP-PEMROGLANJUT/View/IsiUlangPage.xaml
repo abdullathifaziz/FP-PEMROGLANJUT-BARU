@@ -31,7 +31,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuPulsa" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuPulsa_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/pulsa.png"/>
                 </DockPanel>
             </Border>
@@ -42,7 +42,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuPaketData" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuPaketData_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/paketdata.png"/>
                 </DockPanel>
             </Border>
@@ -53,7 +53,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuPascabayar" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuPascabayar_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/pascabayar.png"/>
                 </DockPanel>
             </Border>
@@ -64,7 +64,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuEWallet" Height="145" Width="320" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuEWallet_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/ewallet.png"/>
                 </DockPanel>
             </Border>

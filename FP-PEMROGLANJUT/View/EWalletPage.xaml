@@ -30,11 +30,15 @@
                  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             </Border>
         </Grid>
-        
+
         <Label Content="E - Wallet" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
          VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="237" VerticalContentAlignment="Center" 
-         HorizontalContentAlignment="Center" FontFamily="Righteous"/>
-        
+         HorizontalContentAlignment="Center" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
         <Grid Grid.Row="1" Width="770" Height="170">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -47,11 +51,10 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuDana" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
+                <DockPanel x:Name="menuDana" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
                      MouseDown="menuDana_MouseDown">
-                    <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/dana.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/dana.png"/>
                 </DockPanel>
             </Border>
 
@@ -59,11 +62,10 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuShopeePay" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
+                <DockPanel x:Name="menuShopeePay" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
                      MouseDown="menuShopeePay_MouseDown">
-                    <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/shopeepay.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/shopeepay.png"/>
                 </DockPanel>
             </Border>
 
@@ -71,11 +73,10 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuLinkAja" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
+                <DockPanel x:Name="menuLinkAja" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
                      MouseDown="menuLinkAja_MouseDown">
-                    <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/linkaja.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/linkaja.png"/>
                 </DockPanel>
             </Border>
 
@@ -83,11 +84,10 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
-                <DockPanel Grid.Row="2" x:Name="menuGopay" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
+                <DockPanel x:Name="menuGopay" Height="140" Width="160" Style="{DynamicResource MenuDockPanel}" 
                      MouseDown="menuGopay_MouseDown">
-                    <Image Height="60"
-                            VerticalAlignment="Center" HorizontalAlignment="Center" 
-                            Source="/Images/gopay.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                     Source="/Images/gopay.png"/>
                 </DockPanel>
             </Border>
         </Grid>

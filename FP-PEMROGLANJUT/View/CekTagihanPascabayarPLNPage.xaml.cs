@@ -14,25 +14,24 @@ using System.Windows.Shapes;
 namespace FP_PEMROGLANJUT.View
 {
     /// <summary>
-    /// Interaction logic for NominalEWalletPage.xaml
+    /// Interaction logic for CekTagihanPascabayarPLNPage.xaml
     /// </summary>
-    public partial class NominalEWalletPage : Page
+    public partial class CekTagihanPascabayarPLNPage : Page
     {
-        public NominalEWalletPage()
+        public CekTagihanPascabayarPLNPage()
         {
             InitializeComponent();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoEWalletPage noEWalletPage = new NoEWalletPage();
-            NavigationService.Navigate(noEWalletPage);
+            PascabayarPLNPage pascabayarPLNPage = new PascabayarPLNPage();
+            NavigationService.Navigate(pascabayarPLNPage);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PembayaranPage pembayaranPage = new PembayaranPage();
-            NavigationService.Navigate(pembayaranPage);
+            NavigationService.Navigate(new PembayaranPage());
         }
     }
 }

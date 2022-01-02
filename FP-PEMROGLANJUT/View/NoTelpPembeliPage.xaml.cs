@@ -30,7 +30,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            NominalPage nominalPage = new NominalPage();
+            NavigationService.Navigate(nominalPage);
         }
     }
 }

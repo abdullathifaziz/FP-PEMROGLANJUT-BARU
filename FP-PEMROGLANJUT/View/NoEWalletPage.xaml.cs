@@ -31,7 +31,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            EWalletPage eWalletPage = new EWalletPage();
+            NavigationService.Navigate(eWalletPage);
         }
     }
 }

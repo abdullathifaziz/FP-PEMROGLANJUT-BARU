@@ -35,7 +35,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuListrikPLN" Height="140" Width="225" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuListrikPLN_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/listrikpln.png"/>
                 </DockPanel>
             </Border>
@@ -46,7 +46,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuAirPDAM" Height="140" Width="225" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuAirPDAM_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/airpdam.png"/>
                 </DockPanel>
             </Border>
@@ -57,7 +57,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuInternet" Height="140" Width="225" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuInternet_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/internet.png"/>
                 </DockPanel>
             </Border>
