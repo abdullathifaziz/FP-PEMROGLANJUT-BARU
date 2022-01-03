@@ -34,6 +34,7 @@
     <None Remove="Images\gramedia.png" />
     <None Remove="Images\hiburan.png" />
     <None Remove="Images\iflix.png" />
+    <None Remove="Images\iflix1.png" />
     <None Remove="Images\iflix_color.png" />
     <None Remove="Images\indomaret.png" />
     <None Remove="Images\indosat.png" />
@@ -132,6 +133,7 @@
     <Resource Include="Images\gramedia.png" />
     <Resource Include="Images\hiburan.png" />
     <Resource Include="Images\iflix.png" />
+    <Resource Include="Images\iflix1.png" />
     <Resource Include="Images\iflix_color.png" />
     <Resource Include="Images\indomaret.png" />
     <Resource Include="Images\indosat.png" />
