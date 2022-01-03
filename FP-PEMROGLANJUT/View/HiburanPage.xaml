@@ -35,7 +35,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuGame" Height="140" Width="220" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuGame_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/game.png"/>
                 </DockPanel>
             </Border>
@@ -46,7 +46,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuStreaming" Height="140" Width="220" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuStreaming_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/streaming.png"/>
                 </DockPanel>
             </Border>
@@ -57,7 +57,7 @@
                 </Border.Effect>
                 <DockPanel x:Name="menuVoucher" Height="140" Width="220" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuVoucher_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/voucher.png"/>
                 </DockPanel>
             </Border>

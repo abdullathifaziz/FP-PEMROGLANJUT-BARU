@@ -37,9 +37,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuInternet_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            AirPDAMPage airPDAMPage = new AirPDAMPage();
-            airPDAMPage.header.Content = "INTERNET";
-            NavigationService.Navigate(airPDAMPage);
+            NavigationService.Navigate(new InternetPage());
         }
     }
 }
