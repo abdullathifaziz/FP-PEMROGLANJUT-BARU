@@ -67,7 +67,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuiFlix" Height="145" Width="160" Style="{DynamicResource MenuDockPanel}"
                  MouseDown="menuiFlix_MouseDown">
-                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/iflix.png"/>
+                    <Image Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/Images/iflix1.png"/>
                 </DockPanel>
             </Border>
 
