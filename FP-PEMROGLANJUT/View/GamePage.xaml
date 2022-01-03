@@ -53,7 +53,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuPUBG" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuPUBG_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/pubg.png"/>
                 </DockPanel>
             </Border>
@@ -64,7 +64,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuMobileLegends" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuMobileLegends_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/ml.png"/>
                 </DockPanel>
             </Border>
@@ -75,7 +75,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuFreeFire" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuFreeFire_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/freefire.png"/>
                 </DockPanel>
             </Border>
@@ -86,7 +86,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuArenaOfValor" Height="145" Width="165" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuArenaOfValor_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/aov.png"/>
                 </DockPanel>
             </Border>
@@ -98,7 +98,7 @@
                 </Border.Effect>
                 <DockPanel Grid.Row="2" x:Name="menuSteam" Height="145" Width="175" Style="{DynamicResource MenuDockPanel}" 
                  MouseDown="menuSteam_MouseDown">
-                    <Image Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    <Image Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" 
                      Source="/Images/steam.png"/>
                 </DockPanel>
             </Border>

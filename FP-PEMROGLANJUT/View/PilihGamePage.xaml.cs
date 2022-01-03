@@ -25,7 +25,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            NavigationService.Navigate(new GamePage());
         }
     }
 }
