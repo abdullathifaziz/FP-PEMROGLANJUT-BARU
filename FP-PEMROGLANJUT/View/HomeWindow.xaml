@@ -20,7 +20,8 @@
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="90"/>
-                <RowDefinition Height="110"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="10"/>
                 <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
 
@@ -50,7 +51,13 @@
                 Source="/Images/hiburan.png"/>
             </DockPanel>
 
-            <DockPanel Grid.Row="7" x:Name="menuPengaturan" Height="90" MouseDown="menuPengaturan_MouseDown" Style="{DynamicResource MenuDockPanel}">
+            <DockPanel Grid.Row="6" x:Name="menuRiwayat" Height="90" Style="{DynamicResource MenuDockPanel}" MouseDown="menuRiwayat_MouseDown">
+                <Image Margin="0,0,0,18" Width="60" Height="60"
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                Source="/Images/riwayat.png"/>
+            </DockPanel>
+
+            <DockPanel Grid.Row="8" x:Name="menuPengaturan" Height="90" MouseDown="menuPengaturan_MouseDown" Style="{DynamicResource MenuDockPanel}">
                 <Image Width="80" Height="80" Margin="0,0,0,10"
                 VerticalAlignment="Center" HorizontalAlignment="Center"
                 Source="/Images/pengaturan.png"/>

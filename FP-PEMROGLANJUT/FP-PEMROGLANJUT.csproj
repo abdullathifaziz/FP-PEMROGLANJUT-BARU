@@ -68,6 +68,7 @@
     <None Remove="Images\pubg_color.png" />
     <None Remove="Images\pulsa.png" />
     <None Remove="Images\reddoorz.png" />
+    <None Remove="Images\riwayat.png" />
     <None Remove="Images\shopeepay.png" />
     <None Remove="Images\smartfren.png" />
     <None Remove="Images\smartfren_color.png" />
@@ -168,6 +169,7 @@
     <Resource Include="Images\pubg_color.png" />
     <Resource Include="Images\pulsa.png" />
     <Resource Include="Images\reddoorz.png" />
+    <Resource Include="Images\riwayat.png" />
     <Resource Include="Images\shopeepay.png" />
     <Resource Include="Images\smartfren.png" />
     <Resource Include="Images\smartfren_color.png" />

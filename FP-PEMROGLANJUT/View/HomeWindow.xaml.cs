@@ -53,5 +53,11 @@ namespace FP_PEMROGLANJUT.View
             loginPage.Show();
             this.Close();
         }
+
+        private void menuRiwayat_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            frmMain.Navigate(new View.RiwayatPage());
+            
+        }
     }
 }
