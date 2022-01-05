@@ -141,5 +141,27 @@ namespace FP_PEMROGLANJUT.Model
             connector.Close();
             return result;
         }
+
+        public DataSet SelectManual(string query, string tabel)
+        {
+            DataSet ds = new DataSet();
+
+            try
+            {
+                connector.Open();
+                command = new SqlCommand();
+                command.Connection = connector;
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+                SqlDataAdapter sda = new SqlDataAdapter(command);
+                sda.Fill(ds, tabel);
+            }
+            catch (SqlException)
+            {
+                ds = null;
+            }
+            connector.Close();
+            return ds;
+        }
     }
 }

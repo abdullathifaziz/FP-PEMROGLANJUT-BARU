@@ -42,6 +42,24 @@ namespace FP_PEMROGLANJUT.Model
             string data = "'" + usrname + "','" + passwd + "','" + nama_depan + "','" + nama_belakang + "'";
             return temp.Insert("akun (usrname,passwd,nama_depan,nama_belakang)", data);
         }
-        
+
+        public string CekNamaDepan(string username)
+        {
+            string result;
+            DataSet dsnamadepan = new DataSet();
+            dsnamadepan = temp.SelectManual("SELECT nama_depan FROM akun WHERE usrname = '"+ username +"'","akun");
+            result = dsnamadepan.Tables[0].Rows[0][0].ToString();
+            return result;
+        }
+
+        public string CekNamaBelakang(string username)
+        {
+            string result;
+            DataSet dsnamabelakang = new DataSet();
+            dsnamabelakang = temp.SelectManual("SELECT nama_belakang FROM akun WHERE usrname = '" + username + "'", "akun");
+            result = dsnamabelakang.Tables[0].Rows[0][0].ToString();
+            return result;
+        }
+
     }
 }

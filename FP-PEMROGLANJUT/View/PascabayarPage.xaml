@@ -48,7 +48,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBox TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Padding="16,16,16,16" 
+                <TextBox x:Name="txtNomorKartu" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Padding="16,16,16,16" 
                  FontFamily="Righteous" Height="62" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" 
                  Margin="10,0,10,0">
                     <TextBox.Resources>

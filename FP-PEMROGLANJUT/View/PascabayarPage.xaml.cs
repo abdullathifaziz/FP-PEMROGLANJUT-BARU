@@ -18,13 +18,16 @@ namespace FP_PEMROGLANJUT.View
     /// </summary>
     public partial class PascabayarPage : Page
     {
+        Controller.TagihanController tagihan;
         public PascabayarPage()
         {
             InitializeComponent();
+            tagihan = new Controller.TagihanController(this);
         }
 
         private void btnSelanjutnya_Click(object sender, RoutedEventArgs e)
         {
+            tagihan.CekNomor();
             CekTagihanPascabayarPage cekTagihanPascabayarPage = new CekTagihanPascabayarPage();
             NavigationService.Navigate(cekTagihanPascabayarPage);
         }

@@ -18,9 +18,11 @@ namespace FP_PEMROGLANJUT.View
     /// </summary>
     public partial class CekTagihanPascabayarPage : Page
     {
+        Controller.TagihanController tagihan;
         public CekTagihanPascabayarPage()
         {
             InitializeComponent();
+            tagihan = new Controller.TagihanController(this);
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

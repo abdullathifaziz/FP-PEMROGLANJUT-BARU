@@ -31,10 +31,15 @@ namespace FP_PEMROGLANJUT.Controller
             akun.passwd = login.txtPassword.Password;
             bool result = akun.CekLogin();
 
+            akun.nama_depan = akun.CekNamaDepan(akun.usrname);
+            akun.nama_belakang = akun.CekNamaBelakang(akun.usrname);
+
             if (result)
             {
                 View.HomeWindow homeWindow = new View.HomeWindow();
                 homeWindow.Show();
+                homeWindow.lblIDUser.Content = "ID : " + akun.usrname;
+                homeWindow.lblUser.Content = akun.nama_depan + " " + akun.nama_belakang;
                 login.Close();
             }
             else
