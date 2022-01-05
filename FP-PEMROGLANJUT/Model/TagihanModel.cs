@@ -23,7 +23,7 @@ namespace FP_PEMROGLANJUT.Model
             temp = new DBConnector();
         }
 
-        public static string tagihanSelector;
+        //public static string tagihanSelector;
 
         public string Periode(string id_tagihan)
         {
