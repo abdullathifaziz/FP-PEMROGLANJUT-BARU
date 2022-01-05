@@ -13,6 +13,8 @@ namespace FP_PEMROGLANJUT.Model
         public string passwd { get; set; }
         public string nama_depan { get; set; }
         public string nama_belakang { get; set; }
+        public string email_akun { get; set; }
+        public int no_telp { get; set; }
 
         public AkunModel()
         {

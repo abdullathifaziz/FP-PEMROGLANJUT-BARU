@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:FP_PEMROGLANJUT"
              StartupUri="View/HomeWindow.xaml">
+    
     <Application.Resources>
         <FontFamily x:Key="Righteous">pack://application:,,,/Fonts/#Righteous</FontFamily>
 
