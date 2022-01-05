@@ -17,7 +17,7 @@ namespace FP_PEMROGLANJUT.Model
         {
             // Ganti Data Source dadi Jneng Server e dewe-dewe
             connector = new SqlConnection();
-            connector.ConnectionString = "Data Source = DROPOUT;" +
+            connector.ConnectionString = "Data Source = GARDENS;" +
                                          "Initial Catalog = ppob;" +
                                          "Integrated Security = True";
             return connector;
@@ -82,7 +82,7 @@ namespace FP_PEMROGLANJUT.Model
             result = false;
             try
             {
-                string query = "INSERT INTO " + tabel + " VALUES (" + data + ");";
+                string query = "INSERT INTO " + tabel + " VALUES (" + data + ")";
                 connector.Open();
                 command = new SqlCommand();
                 command.Connection = connector;

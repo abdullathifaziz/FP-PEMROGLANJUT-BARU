@@ -37,8 +37,8 @@ namespace FP_PEMROGLANJUT.Model
 
         public bool InsertAkun()
         {
-            string data = "'" + usrname + "','" + passwd + "','" + nama_depan + "','" + nama_belakang + "',null,null";
-            return temp.Insert("akun", data);
+            string data = "'" + usrname + "','" + passwd + "','" + nama_depan + "','" + nama_belakang + "'";
+            return temp.Insert("akun (usrname,passwd,nama_depan,nama_belakang)", data);
         }
         
     }
