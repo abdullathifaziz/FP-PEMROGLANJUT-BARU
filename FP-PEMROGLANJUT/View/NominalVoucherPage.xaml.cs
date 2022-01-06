@@ -27,5 +27,45 @@ namespace FP_PEMROGLANJUT.View
         {
             NavigationService.Navigate(new VoucherPage());
         }
+
+        private void manu5000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
+
+        private void manu10000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
+
+        private void manu20000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
+
+        private void manu50000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
+
+        private void manu100000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
+
+        private void manu150000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
+
+        private void manu300000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
+
+        private void manu500000_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PembayaranPage());
+        }
     }
 }

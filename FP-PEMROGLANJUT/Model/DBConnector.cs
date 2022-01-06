@@ -15,11 +15,19 @@ namespace FP_PEMROGLANJUT.Model
 
         public static SqlConnection GetConnection()
         {
+            
             // Ganti Data Source dadi Jneng Server e dewe-dewe
             connector = new SqlConnection();
-            connector.ConnectionString = "Data Source = GARDENS;" +
+            //connector.ConnectionString = "Data Source = GARDENS;" +
+            //                             "Initial Catalog = ppob;" +
+            //                             "Integrated Security = True";
+            
+
+            //nyobo(Aziz)
+            connector.ConnectionString = "Data Source = PLENG;" +
                                          "Initial Catalog = ppob;" +
                                          "Integrated Security = True";
+
             return connector;
         }
 

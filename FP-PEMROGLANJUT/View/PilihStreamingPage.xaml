@@ -42,7 +42,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
+            <Border Grid.Column="0" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10" MouseDown="menu1_MouseDown">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
@@ -52,7 +52,7 @@
                 </DockPanel>
             </Border>
 
-            <Border Grid.Column="1" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
+            <Border Grid.Column="1" Grid.Row="0" Background="#14279B" CornerRadius="10" Margin="10,10,10,10" MouseDown="menu2_MouseDown">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
@@ -62,7 +62,7 @@
                 </DockPanel>
             </Border>
 
-            <Border Grid.Column="0" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
+            <Border Grid.Column="0" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10" MouseDown="menu3_MouseDown">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
@@ -72,7 +72,7 @@
                 </DockPanel>
             </Border>
 
-            <Border Grid.Column="1" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10">
+            <Border Grid.Column="1" Grid.Row="1" Background="#14279B" CornerRadius="10" Margin="10,10,10,10" MouseDown="menu4_MouseDown">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
