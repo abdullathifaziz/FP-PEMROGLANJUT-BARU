@@ -18,9 +18,18 @@ namespace FP_PEMROGLANJUT.View
     /// </summary>
     public partial class CekTagihanInternetPage : Page
     {
-        public CekTagihanInternetPage()
+        Controller.TagihanController tagihan;
+        public CekTagihanInternetPage(string nomor, string provider)
         {
             InitializeComponent();
+            tagihan = new Controller.TagihanController(this);
+
+            Model.TagihanModel modeltagihan = new Model.TagihanModel();
+
+            lblProvider.Content = provider;
+            lblNomor.Content = nomor;
+            lblPeriode.Content = modeltagihan.Periode(nomor);
+            lblTagihan.Content = "Rp. " + modeltagihan.TotalTagihan(nomor);
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

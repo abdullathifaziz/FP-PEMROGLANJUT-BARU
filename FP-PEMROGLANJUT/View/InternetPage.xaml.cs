@@ -37,7 +37,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void btnCekTagihan_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CekTagihanInternetPage());
+            NavigationService.Navigate(new CekTagihanInternetPage(noSambunganAirPDAM.Text.ToString(), cmbAirPDAM.Text.ToString()));
         }
     }
 }

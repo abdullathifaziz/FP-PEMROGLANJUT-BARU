@@ -18,9 +18,18 @@ namespace FP_PEMROGLANJUT.View
     /// </summary>
     public partial class CekTagihanAirPDAMPage : Page
     {
-        public CekTagihanAirPDAMPage()
+        Controller.TagihanController tagihan;
+        public CekTagihanAirPDAMPage(string nomor, string wilayah)
         {
             InitializeComponent();
+            tagihan = new Controller.TagihanController(this);
+
+            Model.TagihanModel modeltagihan = new Model.TagihanModel();
+
+            lblWilayah.Content = wilayah;
+            lblNomorPelanggan.Content = nomor;
+            lblPeriode.Content = modeltagihan.Periode(nomor);
+            lblTagihan.Content = "Rp. " + modeltagihan.TotalTagihan(nomor);
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

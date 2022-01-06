@@ -11,9 +11,13 @@ namespace FP_PEMROGLANJUT.Controller
 
         View.PascabayarPage kartu;
         View.PascabayarPLNPage pln;
+        View.AirPDAMPage pdam;
+        View.InternetPage internet;
 
         View.CekTagihanPascabayarPage cekkartu;
         View.CekTagihanPascabayarPLNPage cekpln;
+        View.CekTagihanAirPDAMPage cekpdam;
+        View.CekTagihanInternetPage cekinternet;
 
         public TagihanController(View.PascabayarPage kartu)
         {
@@ -27,6 +31,20 @@ namespace FP_PEMROGLANJUT.Controller
             this.pln = pln;
         }
 
+        public TagihanController(View.AirPDAMPage pdam)
+        {
+            tagihan = new Model.TagihanModel();
+            this.pdam = pdam;
+        }
+
+        public TagihanController(View.InternetPage internet)
+        {
+            tagihan = new Model.TagihanModel();
+            this.internet = internet;
+        }
+
+        //
+
         public TagihanController(View.CekTagihanPascabayarPage cekkartu)
         {
             tagihan = new Model.TagihanModel();
@@ -37,6 +55,17 @@ namespace FP_PEMROGLANJUT.Controller
         {
             tagihan = new Model.TagihanModel();
             this.cekpln = cekpln;
+        }
+        public TagihanController(View.CekTagihanAirPDAMPage cekpdam)
+        {
+            tagihan = new Model.TagihanModel();
+            this.cekpdam = cekpdam;
+        }
+
+        public TagihanController(View.CekTagihanInternetPage cekinternet)
+        {
+            tagihan = new Model.TagihanModel();
+            this.cekinternet = cekinternet;
         }
 
         public void CekNomor(string nomorpelanggan)

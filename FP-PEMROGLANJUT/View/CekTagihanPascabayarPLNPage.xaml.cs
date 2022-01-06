@@ -28,7 +28,7 @@ namespace FP_PEMROGLANJUT.View
             lblNamaPelanggan.Content = modeltagihan.NamaPelanggan(nomor);
             lblNomorPelanggan.Content = nomor;
             lblPeriode.Content = modeltagihan.Periode(nomor);
-            lblTotalTagihan.Content = modeltagihan.TotalTagihan(nomor);
+            lblTotalTagihan.Content = "Rp. " + modeltagihan.TotalTagihan(nomor);
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
