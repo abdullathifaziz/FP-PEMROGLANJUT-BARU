@@ -56,44 +56,39 @@
                     <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                 </Border.Effect>
                 <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="88*"/>
                         <ColumnDefinition Width="85*"/>
                         <ColumnDefinition Width="173*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
+
                     <Label Content="Rp" Background="White" VerticalAlignment="Center" FontSize="18" 
                      Padding="16,16,16,16" FontFamily="Righteous" Height="62" HorizontalContentAlignment="Center"
                      VerticalContentAlignment="Center" Margin="10,0,10,0">
-                        <Label.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </Label.Resources>
-                    </Label>
-                    <TextBox Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" VerticalAlignment="Center" 
-                     FontSize="18" Padding="16,16,16,16" FontFamily="Righteous" Height="62" 
+                            <Label.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Label.Resources>
+                        </Label>
+                     <TextBox Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" VerticalAlignment="Center" 
+                     FontSize="18" Padding="16,16,16,16" FontFamily="Righteous" Height="62" Text="10.000"
                      HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="10,0,10,0">
-                        <TextBox.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </TextBox.Resources>
-                    </TextBox>
-                    <Button x:Name="btnTunai" Click="btnTunai_Click" Content="Tunai" HorizontalAlignment="Stretch" 
-                     Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="18" 
-                     Margin="12,0,12,0" Height="58"  Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-                    <Button x:Name="btnNonTunai" Click="btnNonTunai_Click" Content="Non-Tunai" 
-                     HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" FontSize="18" 
+                            <TextBox.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+                    </Grid>
+
+                    <Button x:Name="btnBayar" Click="btnBayar_Click" Content="Bayar" FontWeight="Bold"
+                     HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Center" FontSize="18" 
                      Margin="12,0,12,0" Height="58" Background="#FF797EF6" Foreground="White" FontFamily="Righteous">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
@@ -103,7 +98,7 @@
                     </Button>
                 </Grid>
             </Border>
-            <Label Content="Pastikan uang anda sudah diterima untuk menghindari penipuan" Foreground="White" 
+            <Label Content="Pastikan uang pelanggan sudah diterima" Foreground="White" 
              FontSize="18" Background="#14279B" Margin="0,10,0,10" Grid.Row="1" Grid.Column="1" FontFamily="Righteous" 
              HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                 <Label.Effect>

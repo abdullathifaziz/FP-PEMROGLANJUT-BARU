@@ -27,5 +27,25 @@ namespace FP_PEMROGLANJUT.View
         {
             NavigationService.Navigate(new StreamingPage());
         }
+
+        private void menu1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new EmailStreamingPage());
+        }
+
+        private void menu2_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new EmailStreamingPage());
+        }
+
+        private void menu3_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new EmailStreamingPage());
+        }
+
+        private void menu4_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new EmailStreamingPage());
+        }
     }
 }

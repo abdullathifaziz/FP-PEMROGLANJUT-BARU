@@ -25,8 +25,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuPaketData1_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            NavigationService.Navigate(new NoTelpPaketPage());
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -38,6 +37,41 @@ namespace FP_PEMROGLANJUT.View
         {
             PaketDataPage paketDataPage = new PaketDataPage();
             NavigationService.Navigate(paketDataPage);
+        }
+
+        private void menuPaketData2_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new NoTelpPaketPage());
+        }
+
+        private void menuPaketData3_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new NoTelpPaketPage());
+        }
+
+        private void menuPaketData5_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new NoTelpPaketPage());
+        }
+
+        private void menuPaketData4_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new NoTelpPaketPage());
+        }
+
+        private void menuPaketData6_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new NoTelpPaketPage());
+        }
+
+        private void menuPaketData7_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new NoTelpPaketPage());
+        }
+
+        private void menuPaketData8_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new NoTelpPaketPage());
         }
     }
 }

@@ -14,23 +14,23 @@ using System.Windows.Shapes;
 namespace FP_PEMROGLANJUT.View
 {
     /// <summary>
-    /// Interaction logic for NominalBayarPage.xaml
+    /// Interaction logic for NoTelpPaketPage.xaml
     /// </summary>
-    public partial class NominalBayarPage : Page
+    public partial class NoTelpPaketPage : Page
     {
-        public NominalBayarPage()
+        public NoTelpPaketPage()
         {
             InitializeComponent();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new PembayaranPage());
+            NavigationService.Navigate(new PilihPaketDataPage());
         }
 
-        private void btnBayar_Click(object sender, RoutedEventArgs e)
+        private void btnSelanjutnya_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new KonfirmasiPage());
+            NavigationService.Navigate(new PembayaranPage());
         }
     }
 }

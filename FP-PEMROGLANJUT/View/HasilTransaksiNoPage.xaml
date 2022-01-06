@@ -1,4 +1,4 @@
-﻿<Page x:Class="FP_PEMROGLANJUT.View.HasilTransaksiPage"
+﻿<Page x:Class="FP_PEMROGLANJUT.View.HasilTransaksiNoPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
       mc:Ignorable="d" 
       d:DesignHeight="585" d:DesignWidth="992"
-      Title="HasilTransaksiPage">
+      Title="HasilTransaksiNoPage">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -33,9 +33,9 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Image Source="/Images/berhasil.png" Width="100" Height="100"/>
+                <Image Source="/Images/gagal.png" Width="100" Height="100"/>
 
-                <Label Grid.Column="1" Content="Transaksi Berhasil" VerticalContentAlignment="Center" FontWeight="Bold"
+                <Label Grid.Column="1" Content="Transaksi Gagal" VerticalContentAlignment="Center" FontWeight="Bold"
                  HorizontalContentAlignment="Center" Foreground="White" FontSize="36" FontFamily="Righteous" />
             </Grid>
         </Border>
@@ -47,7 +47,7 @@
             </Button.Effect>
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>    
+                    <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
         </Button>
