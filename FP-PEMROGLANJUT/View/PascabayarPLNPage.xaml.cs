@@ -25,7 +25,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void btnCekTagihan_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CekTagihanPascabayarPLNPage());
+            NavigationService.Navigate(new CekTagihanPascabayarPLNPage(idPascabayarPelangganPln.Text.ToString()));
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

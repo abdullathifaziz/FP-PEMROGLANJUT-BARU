@@ -47,7 +47,7 @@ namespace FP_PEMROGLANJUT.Model
         {
             string result;
             DataSet dsnamadepan = new DataSet();
-            dsnamadepan = temp.SelectManual("SELECT nama_depan FROM akun WHERE usrname = '"+ username +"'","akun");
+            dsnamadepan = temp.QueryManual("SELECT nama_depan FROM akun WHERE usrname = '"+ username +"'","akun");
             result = dsnamadepan.Tables[0].Rows[0][0].ToString();
             return result;
         }
@@ -56,7 +56,7 @@ namespace FP_PEMROGLANJUT.Model
         {
             string result;
             DataSet dsnamabelakang = new DataSet();
-            dsnamabelakang = temp.SelectManual("SELECT nama_belakang FROM akun WHERE usrname = '" + username + "'", "akun");
+            dsnamabelakang = temp.QueryManual("SELECT nama_belakang FROM akun WHERE usrname = '" + username + "'", "akun");
             result = dsnamabelakang.Tables[0].Rows[0][0].ToString();
             return result;
         }

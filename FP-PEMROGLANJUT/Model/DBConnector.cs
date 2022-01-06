@@ -142,7 +142,7 @@ namespace FP_PEMROGLANJUT.Model
             return result;
         }
 
-        public DataSet SelectManual(string query, string tabel)
+        public DataSet QueryManual(string query, string tabel)
         {
             DataSet ds = new DataSet();
 

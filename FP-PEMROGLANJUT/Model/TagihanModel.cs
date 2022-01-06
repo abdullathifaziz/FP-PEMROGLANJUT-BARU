@@ -23,13 +23,11 @@ namespace FP_PEMROGLANJUT.Model
             temp = new DBConnector();
         }
 
-        //public static string tagihanSelector;
-
         public string Periode(string id_tagihan)
         {
             string result;
             DataSet dsperiode = new DataSet();
-            dsperiode = temp.SelectManual("SELECT periode FROM tagihan WHERE nomor_tagihan = " + id_tagihan,"tagihan");
+            dsperiode = temp.QueryManual("SELECT periode FROM tagihan WHERE nomor_tagihan = " + id_tagihan, "tagihan");
             result = dsperiode.Tables[0].Rows[0][0].ToString();
             return result;
         }
@@ -38,8 +36,17 @@ namespace FP_PEMROGLANJUT.Model
         {
             string result;
             DataSet dstotal = new DataSet();
-            dstotal = temp.SelectManual("SELECT total_tagihan FROM tagihan WHERE nomor_tagihan = " + id_tagihan, "tagihan");
+            dstotal = temp.QueryManual("SELECT total_tagihan FROM tagihan WHERE nomor_tagihan = " + id_tagihan, "tagihan");
             result = dstotal.Tables[0].Rows[0][0].ToString();
+            return result;
+        }
+
+        public string NamaPelanggan(string id_tagihan)
+        {
+            string result;
+            DataSet dsnamapelanggan = new DataSet();
+            dsnamapelanggan = temp.QueryManual("SELECT nama_pelanggan FROM tagihan WHERE nomor_tagihan = " + id_tagihan, "tagihan");
+            result = dsnamapelanggan.Tables[0].Rows[0][0].ToString();
             return result;
         }
     }

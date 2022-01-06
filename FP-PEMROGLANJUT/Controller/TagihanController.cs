@@ -8,13 +8,23 @@ namespace FP_PEMROGLANJUT.Controller
     class TagihanController
     {
         Model.TagihanModel tagihan;
-        View.PascabayarPage pascabayarkartu;
-        View.CekTagihanPascabayarPage cekkartu;
 
-        public TagihanController(View.PascabayarPage pascabayarkartu)
+        View.PascabayarPage kartu;
+        View.PascabayarPLNPage pln;
+
+        View.CekTagihanPascabayarPage cekkartu;
+        View.CekTagihanPascabayarPLNPage cekpln;
+
+        public TagihanController(View.PascabayarPage kartu)
         {
             tagihan = new Model.TagihanModel();
-            this.pascabayarkartu = pascabayarkartu;
+            this.kartu = kartu;
+        }
+
+        public TagihanController(View.PascabayarPLNPage pln)
+        {
+            tagihan = new Model.TagihanModel();
+            this.pln = pln;
         }
 
         public TagihanController(View.CekTagihanPascabayarPage cekkartu)
@@ -23,25 +33,18 @@ namespace FP_PEMROGLANJUT.Controller
             this.cekkartu = cekkartu;
         }
 
-        public void CekNomor()
+        public TagihanController(View.CekTagihanPascabayarPLNPage cekpln)
         {
-            tagihan.id_tagihan = pascabayarkartu.txtNomorKartu.Text;
-            tagihan.periode = tagihan.Periode(tagihan.id_tagihan);
-            tagihan.total_tagihan = Int32.Parse(tagihan.TotalTagihan(tagihan.id_tagihan));
-
-            try
-            {
-                cekkartu.lblNomorKartu.Content = tagihan.id_tagihan;
-                cekkartu.lblPeriodeKartu.Content = tagihan.periode;
-                cekkartu.lblTotalKartu.Content = "Rp" + tagihan.total_tagihan;
-            }
-            catch(Exception error)
-            {
-                MessageBox.Show(error.Message);
-            }
-            
+            tagihan = new Model.TagihanModel();
+            this.cekpln = cekpln;
         }
 
+        public void CekNomor(string nomorpelanggan)
+        {
+            //tagihan.id_tagihan = nomorpelanggan;
+            //tagihan.periode = tagihan.Periode(tagihan.id_tagihan);
+            //tagihan.total_tagihan = Int32.Parse(tagihan.TotalTagihan(tagihan.id_tagihan));
+        }
 
     }
 }

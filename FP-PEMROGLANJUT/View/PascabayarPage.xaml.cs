@@ -27,9 +27,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void btnSelanjutnya_Click(object sender, RoutedEventArgs e)
         {
-            tagihan.CekNomor();
-            CekTagihanPascabayarPage cekTagihanPascabayarPage = new CekTagihanPascabayarPage();
-            NavigationService.Navigate(cekTagihanPascabayarPage);
+            tagihan.CekNomor(txtNomorKartu.Text.ToString());
+            NavigationService.Navigate(new View.CekTagihanPascabayarPage(txtNomorKartu.Text.ToString()));
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

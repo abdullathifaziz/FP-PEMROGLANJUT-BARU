@@ -19,10 +19,15 @@ namespace FP_PEMROGLANJUT.View
     public partial class CekTagihanPascabayarPage : Page
     {
         Controller.TagihanController tagihan;
-        public CekTagihanPascabayarPage()
+        public CekTagihanPascabayarPage(string nomor)
         {
             InitializeComponent();
             tagihan = new Controller.TagihanController(this);
+
+            Model.TagihanModel modeltagihan = new Model.TagihanModel();
+            lblNomorKartu.Content = nomor;
+            lblPeriodeKartu.Content = modeltagihan.Periode(nomor);
+            lblTotalKartu.Content = "Rp. " + modeltagihan.TotalTagihan(nomor);
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
