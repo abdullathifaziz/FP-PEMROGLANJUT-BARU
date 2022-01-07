@@ -44,7 +44,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuPengaturan_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            frmMain.Navigate(new View.PengaturanPage());
+            frmMain.Navigate(new View.Pengaturan());
         }
 
         private void logout_MouseDown(object sender, MouseButtonEventArgs e)

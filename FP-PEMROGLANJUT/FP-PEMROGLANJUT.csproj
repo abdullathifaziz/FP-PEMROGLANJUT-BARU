@@ -81,6 +81,7 @@
     <None Remove="Images\telkomsel_color.png" />
     <None Remove="Images\tiketcom.png" />
     <None Remove="Images\tokenlistrikpln.png" />
+    <None Remove="Images\tombolmasuk.png" />
     <None Remove="Images\totaltagihan.png" />
     <None Remove="Images\tri.png" />
     <None Remove="Images\tri_color.png" />
@@ -183,6 +184,7 @@
     <Resource Include="Images\telkomsel_color.png" />
     <Resource Include="Images\tiketcom.png" />
     <Resource Include="Images\tokenlistrikpln.png" />
+    <Resource Include="Images\tombolmasuk.png" />
     <Resource Include="Images\totaltagihan.png" />
     <Resource Include="Images\tri.png" />
     <Resource Include="Images\tri_color.png" />
