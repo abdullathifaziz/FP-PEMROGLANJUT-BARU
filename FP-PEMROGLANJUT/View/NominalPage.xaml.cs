@@ -39,6 +39,8 @@ namespace FP_PEMROGLANJUT.View
         {
             NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
             NavigationService.Navigate(noTelpPembeliPage);
+
+            //PembayaranPage.icon = "axis.png";
         }
 
         private void menuNominal15000_MouseDown(object sender, MouseButtonEventArgs e)

@@ -27,6 +27,8 @@ namespace FP_PEMROGLANJUT.View
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "xl.png";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -44,6 +46,8 @@ namespace FP_PEMROGLANJUT.View
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "indosat.png";
         }
 
         private void menuTri_MouseDown(object sender, MouseButtonEventArgs e)
