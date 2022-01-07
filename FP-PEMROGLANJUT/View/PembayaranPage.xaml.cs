@@ -18,9 +18,14 @@ namespace FP_PEMROGLANJUT.View
     /// </summary>
     public partial class PembayaranPage : Page
     {
+        public static string icon;
         public PembayaranPage()
         {
             InitializeComponent();
+
+            string path = "/Images/" + icon;
+            Uri resourceUri = new Uri(path, UriKind.Relative);
+            imgIcon.Source = new BitmapImage(resourceUri);
         }
 
         private void btnBayar_Click(object sender, RoutedEventArgs e)
