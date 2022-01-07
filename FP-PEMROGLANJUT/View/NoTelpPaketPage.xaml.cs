@@ -30,6 +30,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void btnSelanjutnya_Click(object sender, RoutedEventArgs e)
         {
+            PembayaranPage.nomor = txtNoTelpPaket.Text.ToString();
             NavigationService.Navigate(new PembayaranPage());
         }
     }
