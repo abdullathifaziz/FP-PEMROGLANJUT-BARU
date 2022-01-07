@@ -45,13 +45,13 @@
                         <Label Grid.Row="0" Content="Layanan Yang Di Pilih :" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
                         
-                        <Label Grid.Row="1" Content="XL KUOTA DATA 10 GB" FontSize="18" FontFamily="Righteous"
+                        <Label x:Name="lblLayanan" Grid.Row="1" Content="XL KUOTA DATA 10 GB" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
 
                         <Label Grid.Row="2" Content="No Pelanggan" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
                         
-                        <Label Grid.Row="3" Content="123456789xxx" FontSize="18" FontFamily="Righteous"
+                        <Label x:Name="lblNomor" Grid.Row="3" Content="123456789xxx" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
 
                         <Button x:Name="btnBayar" Click="btnBayar_Click" Content="Bayar" HorizontalAlignment="Center"
