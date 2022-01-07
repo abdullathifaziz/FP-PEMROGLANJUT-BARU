@@ -18,8 +18,10 @@
                 <ColumnDefinition Width="105*"/>
             </Grid.ColumnDefinitions>
 
+
             <Border BorderBrush="White" BorderThickness="0" Width="156" Height="156" CornerRadius="10">
-                <Image x:Name="imgIcon" Source="/Images/xl.png" />
+                <Image x:Name="imgIcon" Source="/Images/noimage.png" Height="130" Width="130"/>
+
             </Border>
 
             <Border Grid.Column="1" Margin="0,32,32,32" BorderBrush="White" BorderThickness="1">
@@ -40,18 +42,18 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" Content="Paket Yang Di Pilih" FontSize="18" FontFamily="Righteous"
+                        <Label Grid.Row="0" Content="Layanan Yang Di Pilih :" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
-                        
-                        <Label x:Name="lblLayanan" Grid.Row="1" Content="XL KUOTA DATA 10 GB" FontSize="18" FontFamily="Righteous"
+
+                        <Label Grid.Row="1" Content="XL KUOTA DATA 10 GB" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
-                        
+
                         <Label Grid.Row="2" Content="No Pelanggan" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
-                        
-                        <Label x:Name="lblNomor" Grid.Row="3" Content="123456789xxx" FontSize="18" FontFamily="Righteous"
+
+                        <Label Grid.Row="3" Content="123456789xxx" FontSize="18" FontFamily="Righteous"
                          HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="18,0,0,0"/>
-                        
+
                         <Button x:Name="btnBayar" Click="btnBayar_Click" Content="Bayar" HorizontalAlignment="Center"
                          Grid.Row="4" VerticalAlignment="Center" FontSize="18" Width="270" Height="32"
                          Background="#FF797EF6" Foreground="White" FontFamily="Righteous"/>

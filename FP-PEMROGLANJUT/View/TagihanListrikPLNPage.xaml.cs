@@ -26,11 +26,15 @@ namespace FP_PEMROGLANJUT.View
         private void menuTokenListrik_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new TokenPLNPage());
+
+            PembayaranPage.icon = "tokenlistrikpln.png";
         }
 
         private void menuPascabayar_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new PascabayarPLNPage());
+
+            PembayaranPage.icon = "pascabayarpln.png";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

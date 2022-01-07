@@ -33,11 +33,15 @@ namespace FP_PEMROGLANJUT.View
             AirPDAMPage airPDAMPage = new AirPDAMPage();
             airPDAMPage.header.Content = "Air PDAM";
             NavigationService.Navigate(airPDAMPage);
+
+            PembayaranPage.icon = "airpdam.png";
         }
 
         private void menuInternet_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new InternetPage());
+
+            PembayaranPage.icon = "internet.png";
         }
     }
 }

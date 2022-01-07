@@ -54,36 +54,48 @@ namespace FP_PEMROGLANJUT.View
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "Tri.png";
         }
 
         private void menuTelkomsel_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "Telkomsel.png";
         }
 
         private void menuSmartfren_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "Smartfren.png";
         }
 
         private void menuAxis_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "Axis.png";
         }
 
         private void menuByu_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "By u.png";
         }
 
         private void menuFlexi_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NominalPage nominalPage = new NominalPage();
             NavigationService.Navigate(nominalPage);
+
+            PembayaranPage.icon = "Flexi.png";
         }
     }
 }

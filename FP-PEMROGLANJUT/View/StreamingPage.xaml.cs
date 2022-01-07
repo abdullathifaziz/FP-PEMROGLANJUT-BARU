@@ -33,6 +33,8 @@ namespace FP_PEMROGLANJUT.View
             pilihStreamingPage.logoMaxStream.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihStreamingPage);
+
+            PembayaranPage.icon = "netflix1.png";
         }
         private void menuiFlix_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -45,6 +47,8 @@ namespace FP_PEMROGLANJUT.View
             pilihStreamingPage.logoMaxStream.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihStreamingPage);
+
+            PembayaranPage.icon = "iflix1.png";
         }
         private void menuVidio_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -57,6 +61,8 @@ namespace FP_PEMROGLANJUT.View
             pilihStreamingPage.logoMaxStream.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihStreamingPage);
+
+            PembayaranPage.icon = "vidio1.png";
         }
         private void menuViu_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -69,6 +75,8 @@ namespace FP_PEMROGLANJUT.View
             pilihStreamingPage.logoMaxStream.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihStreamingPage);
+
+            PembayaranPage.icon = "viu1.png";
         }
         private void menuMaxStream_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -81,6 +89,8 @@ namespace FP_PEMROGLANJUT.View
             pilihStreamingPage.logoMaxStream.Visibility = Visibility.Visible;
 
             NavigationService.Navigate(pilihStreamingPage);
+
+            PembayaranPage.icon = "maxstream1.png";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

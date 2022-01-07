@@ -108,9 +108,11 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi6.Visibility = Visibility.Hidden;
             pilihPaketDataPage.menuPaketFlexi7.Visibility = Visibility.Hidden;
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Hidden;
-
+            
             NavigationService.Navigate(pilihPaketDataPage);
 
+            PembayaranPage.icon = "xl.png";
+            
         }
 
         private void menuPaketDataIndosat_MouseDown(object sender, MouseButtonEventArgs e)
@@ -199,6 +201,8 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihPaketDataPage);
+
+            PembayaranPage.icon = "indosat.png";
         }
 
         private void menuPaketDataTri_MouseDown(object sender, MouseButtonEventArgs e)
@@ -287,6 +291,8 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihPaketDataPage);
+
+            PembayaranPage.icon = "Tri.png";
         }
 
         private void menuPaketDataTelkomsel_MouseDown(object sender, MouseButtonEventArgs e)
@@ -375,6 +381,8 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihPaketDataPage);
+
+            PembayaranPage.icon = "Telkomsel.png";
         }
 
         private void menuPaketDataSmartfren_MouseDown(object sender, MouseButtonEventArgs e)
@@ -463,6 +471,8 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihPaketDataPage);
+
+            PembayaranPage.icon = "Smartfren.png";
         }
 
         private void menuPaketDataAxis_MouseDown(object sender, MouseButtonEventArgs e)
@@ -551,6 +561,8 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihPaketDataPage);
+
+            PembayaranPage.icon = "Axis.png";
         }
 
         private void menuPaketDataByu_MouseDown(object sender, MouseButtonEventArgs e)
@@ -639,6 +651,8 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihPaketDataPage);
+
+            PembayaranPage.icon = "By u.png";
         }
 
         private void menuPaketDataFlexi_MouseDown(object sender, MouseButtonEventArgs e)
@@ -727,6 +741,8 @@ namespace FP_PEMROGLANJUT.View
             pilihPaketDataPage.menuPaketFlexi8.Visibility = Visibility.Visible;
 
             NavigationService.Navigate(pilihPaketDataPage);
+
+            PembayaranPage.icon = "Flexi.png";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
