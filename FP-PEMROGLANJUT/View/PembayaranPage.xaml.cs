@@ -19,6 +19,10 @@ namespace FP_PEMROGLANJUT.View
     public partial class PembayaranPage : Page
     {
         public static string icon;
+        public static string layanan;
+        public static string nominal;
+        public static string nomor;
+
         public PembayaranPage()
         {
             InitializeComponent();
@@ -26,6 +30,9 @@ namespace FP_PEMROGLANJUT.View
             string path = "/Images/" + icon;
             Uri resourceUri = new Uri(path, UriKind.Relative);
             imgIcon.Source = new BitmapImage(resourceUri);
+
+            lblLayanan.Content = layanan + " - " + nominal;
+            lblNomor.Content = nomor;
         }
 
         private void btnBayar_Click(object sender, RoutedEventArgs e)

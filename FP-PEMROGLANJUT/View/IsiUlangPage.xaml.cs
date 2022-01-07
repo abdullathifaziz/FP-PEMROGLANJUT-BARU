@@ -25,8 +25,9 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuPulsa_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            PulsaPage pulsaPage = new PulsaPage();
-            NavigationService.Navigate(pulsaPage);
+            NavigationService.Navigate(new PulsaPage());
+
+            PembayaranPage.layanan = "Pulsa";
         }
 
         private void menuPaketData_MouseDown(object sender, MouseButtonEventArgs e)

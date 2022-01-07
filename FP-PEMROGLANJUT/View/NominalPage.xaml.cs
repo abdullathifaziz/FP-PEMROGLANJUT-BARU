@@ -25,8 +25,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuNominal5000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            NavigationService.Navigate(new NoTelpPembeliPage());
+            PembayaranPage.nominal = "Rp 5.000";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -37,10 +37,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuNominal10000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
-
-            //PembayaranPage.icon = "axis.png";
+            NavigationService.Navigate(new NoTelpPembeliPage());
+            PembayaranPage.nominal = "Rp 10.000";
         }
 
         private void menuNominal15000_MouseDown(object sender, MouseButtonEventArgs e)
