@@ -28,7 +28,9 @@ namespace FP_PEMROGLANJUT.Model
             string result;
             DataSet dsperiode = new DataSet();
             dsperiode = temp.QueryManual("SELECT periode FROM tagihan WHERE nomor_tagihan = " + id_tagihan, "tagihan");
+            
             result = dsperiode.Tables[0].Rows[0][0].ToString();
+
             return result;
         }
 

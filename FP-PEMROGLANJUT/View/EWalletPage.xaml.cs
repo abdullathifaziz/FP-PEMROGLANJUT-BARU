@@ -27,22 +27,30 @@ namespace FP_PEMROGLANJUT.View
         {
             NoEWalletPage noEWalletPage = new NoEWalletPage();
             NavigationService.Navigate(noEWalletPage);
+
+            PembayaranPage.icon = "dana.png";
         }
 
         private void menuShopeePay_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NoEWalletPage noEWalletPage = new NoEWalletPage();
             NavigationService.Navigate(noEWalletPage);
+
+            PembayaranPage.icon = "shopeepay.png";
         }
         private void menuLinkAja_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NoEWalletPage noEWalletPage = new NoEWalletPage();
             NavigationService.Navigate(noEWalletPage);
+
+            PembayaranPage.icon = "linkaja.png";
         }
         private void menuGopay_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NoEWalletPage noEWalletPage = new NoEWalletPage();
             NavigationService.Navigate(noEWalletPage);
+
+            PembayaranPage.icon = "gopay.png";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

@@ -39,6 +39,8 @@ namespace FP_PEMROGLANJUT.View
         {
             PascabayarPage pascabayarPage = new PascabayarPage();
             NavigationService.Navigate(pascabayarPage);
+
+            PembayaranPage.icon = "pascabayar.png";
         }
 
         private void menuEWallet_MouseDown(object sender, MouseButtonEventArgs e)

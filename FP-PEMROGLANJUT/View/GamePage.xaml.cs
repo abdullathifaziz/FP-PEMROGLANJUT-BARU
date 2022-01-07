@@ -78,6 +78,8 @@ namespace FP_PEMROGLANJUT.View
             pilihGamePage.menuSteam8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihGamePage);
+
+            PembayaranPage.icon = "pubg.png";
         }
         private void menuMobileLegends_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -135,6 +137,8 @@ namespace FP_PEMROGLANJUT.View
             pilihGamePage.menuSteam8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihGamePage);
+
+            PembayaranPage.icon = "ml.png";
         }
         private void menuFreeFire_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -192,6 +196,8 @@ namespace FP_PEMROGLANJUT.View
             pilihGamePage.menuSteam8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihGamePage);
+
+            PembayaranPage.icon = "freefire.png";
         }
         private void menuArenaOfValor_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -249,6 +255,8 @@ namespace FP_PEMROGLANJUT.View
             pilihGamePage.menuSteam8.Visibility = Visibility.Hidden;
 
             NavigationService.Navigate(pilihGamePage);
+
+            PembayaranPage.icon = "aov.png";
         }
         private void menuSteam_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -306,6 +314,8 @@ namespace FP_PEMROGLANJUT.View
             pilihGamePage.menuSteam8.Visibility = Visibility.Visible;
 
             NavigationService.Navigate(pilihGamePage);
+
+            PembayaranPage.icon = "steam.png";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
