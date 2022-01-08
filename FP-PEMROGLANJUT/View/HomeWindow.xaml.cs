@@ -20,6 +20,9 @@ namespace FP_PEMROGLANJUT.View
         public HomeWindow()
         {
             InitializeComponent();
+
+            string hariIni = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            lblTanggalan.Content = hariIni;
         }
 
         private void menuBeranda_MouseDown(object sender, MouseButtonEventArgs e)

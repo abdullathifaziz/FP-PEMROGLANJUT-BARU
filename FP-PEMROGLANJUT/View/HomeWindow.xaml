@@ -86,7 +86,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Label Content="Senin, 15 November 2021" FontSize="36" Foreground="White" Grid.RowSpan="3"
+                <Label x:Name="lblTanggalan" Content="Senin, 15 November 2021" FontSize="36" Foreground="White" Grid.RowSpan="3"
                        FontWeight="Bold" VerticalContentAlignment="Center"/>
 
                 <Image Grid.Column="2" Grid.RowSpan="3" Source="/Images/profil.png" />
