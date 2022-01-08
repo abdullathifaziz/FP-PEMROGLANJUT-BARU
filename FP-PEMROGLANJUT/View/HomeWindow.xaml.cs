@@ -21,7 +21,7 @@ namespace FP_PEMROGLANJUT.View
         {
             InitializeComponent();
 
-            string hariIni = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            string hariIni = DateTime.Now.ToString("dddd, dd MMMM yyyy", new System.Globalization.CultureInfo("id-ID"));
             lblTanggalan.Content = hariIni;
         }
 
