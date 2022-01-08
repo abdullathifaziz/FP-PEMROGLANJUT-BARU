@@ -38,5 +38,20 @@ namespace FP_PEMROGLANJUT.Model
             string data = "'" + id_tagihan + "'";
             return temp.Insert("transaksi(id_tagihan)", data);
         }
+
+        public DataSet SelectDataGrid(string search)
+        {
+            DataSet dsSelectDataGrid = new DataSet();
+            if (search == "")
+            {
+                dsSelectDataGrid = temp.Select("transaksi FULL JOIN produk ON produk.id_produk = transaksi.id_produk FULL JOIN tagihan ON tagihan.id_tagihan = transaksi.id_tagihan FULL JOIN pembeli ON pembeli.id_transaksi = transaksi.id_transaksi JOIN pembayaran ON pembayaran.id_transaksi = transaksi.id_transaksi", null);
+            }
+            else
+            {
+                string kondisi = "produk.kategori_produk LIKE '%" + search + "%'";
+                dsSelectDataGrid = temp.Select("transaksi FULL JOIN produk ON produk.id_produk = transaksi.id_produk FULL JOIN tagihan ON tagihan.id_tagihan = transaksi.id_tagihan FULL JOIN pembeli ON pembeli.id_transaksi = transaksi.id_transaksi JOIN pembayaran ON pembayaran.id_transaksi = transaksi.id_transaksi", kondisi);
+            }
+            return dsSelectDataGrid;
+        }
     }
 }

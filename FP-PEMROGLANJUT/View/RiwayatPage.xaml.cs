@@ -18,14 +18,29 @@ namespace FP_PEMROGLANJUT.View
     /// </summary>
     public partial class RiwayatPage : Page
     {
+        Controller.TransaksiController transaksi;
         public RiwayatPage()
         {
             InitializeComponent();
+
+            transaksi = new Controller.TransaksiController(this);
+
+            transaksi.DataRiwayat();
         }
 
         private void dgSiswa_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void txtCari_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            transaksi.DataRiwayat();
+        }
+
+        private void btnCari_Click(object sender, RoutedEventArgs e)
+        {
+            transaksi.DataRiwayat();
         }
     }
 }
