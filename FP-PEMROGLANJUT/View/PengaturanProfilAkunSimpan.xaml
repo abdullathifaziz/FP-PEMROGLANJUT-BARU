@@ -1,0 +1,113 @@
+﻿<Page x:Class="FP_PEMROGLANJUT.View.PengaturanProfilAkunSimpan"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="585" d:DesignWidth="992"
+      Title="PengaturanProfilAkunSimpan">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="56*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="40" Width="80" 
+             HorizontalAlignment="Center" Margin="0,10,370,10" CornerRadius="10" MouseDown="Border_MouseDown" >
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+            </Border.Effect>
+            <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
+        </Border>
+
+        <Label Content="Pengaturan" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="290" VerticalContentAlignment="Center"
+         HorizontalContentAlignment="Center" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="280"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Content="Profil Akun" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                 FontSize="20" Foreground="White" FontFamily="Righteous" FontWeight="Bold"/>
+
+                <Border x:Name="btnSimpanAkunProfil" Grid.Row="0" Background="#14279B" Height="30" Width="65" HorizontalAlignment="Right" 
+                 CornerRadius="10" MouseDown="Simpan_MouseDown" Margin="0,0,15,0">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                    </Border.Effect>
+                    <Label Content="SIMPAN" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 Foreground="White" FontWeight="Bold" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
+                </Border>
+
+                <Border Grid.Row="1" Background="#14279B" Width="430" HorizontalAlignment="Left"
+                 CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                    </Border.Effect>
+                    <DockPanel Height="35" Width="410" Grid.Column="1">
+                        <Label Content="Nama" HorizontalAlignment="left" VerticalAlignment="Center"
+                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
+                         VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="namaAkunProfil" Text="Budi Perkasa Sejahtera" HorizontalAlignment="Right" VerticalAlignment="Center"
+                         HorizontalContentAlignment="Right" FontSize="16" Foreground="White" BorderBrush="{x:Null}"
+                         Background="{x:Null}" Width="200"/>
+                    </DockPanel>
+                </Border>
+
+                <Border Grid.Row="2" Background="#14279B" Width="430" HorizontalAlignment="Left"
+                 CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                    </Border.Effect>
+                    <DockPanel Height="35" Width="410" Grid.Column="1">
+                        <Label Content="Username" HorizontalAlignment="left" VerticalAlignment="Center"
+                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
+                         VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="usernameAkunProfil" Text="budiperkasa" HorizontalAlignment="Right" VerticalAlignment="Center"
+                         HorizontalContentAlignment="Right" FontSize="16" Foreground="White" BorderBrush="{x:Null}"
+                         Background="{x:Null}" Width="200"/>
+                    </DockPanel>
+                </Border>
+
+                <Border Grid.Row="3" Background="#14279B" Width="430" HorizontalAlignment="Left"
+                 CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                    </Border.Effect>
+                    <DockPanel Height="35" Width="410" Grid.Column="1">
+                        <Label Content="Password" HorizontalAlignment="left" VerticalAlignment="Center"
+                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
+                         VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="passowrdAkunProfil" Text="josbosku123" HorizontalAlignment="Right" VerticalAlignment="Center"
+                         HorizontalContentAlignment="Right" FontSize="16" Foreground="White" BorderBrush="{x:Null}"
+                         Background="{x:Null}" Width="200"/>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

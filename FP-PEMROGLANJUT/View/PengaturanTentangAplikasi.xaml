@@ -1,0 +1,78 @@
+﻿<Page x:Class="FP_PEMROGLANJUT.View.PengaturanTentangAplikasi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="585" d:DesignWidth="992"
+      Title="PengaturanTentangAplikasi">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="56*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0" Background="#14279B" Height="40" Width="80" 
+             HorizontalAlignment="Center" Margin="0,10,370,10" CornerRadius="10" MouseDown="Border_MouseDown" >
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+            </Border.Effect>
+            <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
+        </Border>
+
+        <Label Content="Pengaturan" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="290" VerticalContentAlignment="Center"
+         HorizontalContentAlignment="Center" FontFamily="Righteous">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
+            </Label.Effect>
+        </Label>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="280"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="195"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Content="Tentang Aplikasi" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                 FontSize="20" Foreground="White" FontFamily="Righteous" FontWeight="Bold"/>
+
+                <Border Grid.Row="1" Background="#14279B" Width="430" HorizontalAlignment="Left"
+                 CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                    </Border.Effect>
+                    <StackPanel>
+                        <Label Content="Aplikasi PPOB Pulsa ini digunakan untuk" HorizontalContentAlignment="Center"
+                         HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" 
+                         FontWeight="Bold" FontSize="18" Margin="0,10,0,0" Height="40" Width="410"/>
+                        <Label Content="melakukan transaksi pmebayaran berupa" HorizontalContentAlignment="Center"
+                         HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
+                         FontWeight="Bold" FontSize="18" Margin="0,-10,0,0" Height="40" Width="410"/>
+                        <Label Content="pengisian pulsa, paket data, ewallet," HorizontalContentAlignment="Center"
+                         HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
+                         FontWeight="Bold" FontSize="18" Margin="0,-10,0,0" Height="40" Width="410"/>
+                        <Label Content="dan masih banyak lagi." HorizontalContentAlignment="Center"
+                         HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
+                         FontWeight="Bold" FontSize="18" Margin="0,-10,0,0" Height="40" Width="410"/>
+                        <Label Content="@Kelompok 4" HorizontalAlignment="Center" VerticalAlignment="Top"
+                         Foreground="White" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center"
+                         Margin="0,10,0,0" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

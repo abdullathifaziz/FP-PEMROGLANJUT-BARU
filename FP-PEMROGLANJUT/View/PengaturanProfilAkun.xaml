@@ -1,4 +1,4 @@
-﻿<Page x:Class="FP_PEMROGLANJUT.View.Pengaturan"
+﻿<Page x:Class="FP_PEMROGLANJUT.View.PengaturanProfilAkun"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,22 +6,32 @@
       xmlns:local="clr-namespace:FP_PEMROGLANJUT.View"
       mc:Ignorable="d" 
       d:DesignHeight="585" d:DesignWidth="992"
-      Title="Pengaturan">
+      Title="PengaturanProfilAkun">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="17*"/>
             <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
-        
+
+        <Border Grid.Row="0" Background="#14279B" Height="40" Width="80" 
+             HorizontalAlignment="Center" Margin="0,10,370,10" CornerRadius="10" MouseDown="Border_MouseDown" >
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+            </Border.Effect>
+            <Label Content="KEMBALI" HorizontalAlignment="Center" VerticalAlignment="Center"  
+                 Foreground="White" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
+        </Border>
+
         <Label Content="Pengaturan" Foreground="White" FontSize="36" HorizontalAlignment="Center" 
-         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="290" VerticalContentAlignment="Center" 
+         VerticalAlignment="Center" FontWeight="Bold" Height="58" Width="290" VerticalContentAlignment="Center"
          HorizontalContentAlignment="Center" FontFamily="Righteous">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
             </Label.Effect>
         </Label>
-
+        
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="280"/>
@@ -39,70 +49,65 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-
-                <Label Grid.Row="0" Content="Pengaturan Akun" HorizontalAlignment="Left" VerticalAlignment="Center" 
-                 FontSize="20" Foreground="White" FontFamily="Righteous" FontWeight="Bold"/>
                 
-                <Border Grid.Row="1" Background="#14279B" Width="430" HorizontalAlignment="Left"
-                 CornerRadius="10" MouseDown="ProfilAkun_MouseDown" >
-                    <Border.Effect>
-                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
-                    </Border.Effect>
-                    <DockPanel Height="35" Width="410" Style="{DynamicResource MenuDockPanel}" Grid.Column="1">
-                        <Label Content="Profil Akun" HorizontalAlignment="left" VerticalAlignment="Center"
-                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
-                         VerticalContentAlignment="Center"/>
-                        <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Right"
-                         Source="/Images/tombolmasuk.png"/>
-                    </DockPanel>
-                </Border>
 
-                <Label Grid.Row="2" Content="Informasi Lainnya" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                <Label Grid.Row="0" Content="Profil Akun" HorizontalAlignment="Left" VerticalAlignment="Center" 
                  FontSize="20" Foreground="White" FontFamily="Righteous" FontWeight="Bold"/>
 
-                <Border Grid.Row="3" Background="#14279B" Width="430" HorizontalAlignment="Left"
-                 CornerRadius="10" MouseDown="BantuanPengguna_MouseDown" >
+                <Border Grid.Row="0" Background="#14279B" Height="30" Width="60" HorizontalAlignment="Right" 
+                 CornerRadius="10" MouseDown="Edit_MouseDown" Margin="0,0,15,0">
                     <Border.Effect>
                         <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                     </Border.Effect>
-                    <DockPanel Height="35" Width="410" Style="{DynamicResource MenuDockPanel}" Grid.Column="1">
-                        <Label Content="Bantuan Pengguna" HorizontalAlignment="left" VerticalAlignment="Center"
-                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
-                         VerticalContentAlignment="Center"/>
-                        <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Right"
-                         Source="/Images/tombolmasuk.png"/>
-                    </DockPanel>
+                    <Label Content="EDIT" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 Foreground="White" FontWeight="Bold" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
                 </Border>
 
-                <Border Grid.Row="4" Background="#14279B" Width="430" HorizontalAlignment="Left"
-                 CornerRadius="10" MouseDown="TentangAplikasi_MouseDown" >
-                    <Border.Effect>
-                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
-                    </Border.Effect>
-                    <DockPanel Height="35" Width="410" Style="{DynamicResource MenuDockPanel}" Grid.Column="1">
-                        <Label Content="Tentang Aplikasi" HorizontalAlignment="left" VerticalAlignment="Center"
-                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
-                         VerticalContentAlignment="Center"/>
-                        <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Right"
-                         Source="/Images/tombolmasuk.png"/>
-                    </DockPanel>
-                </Border>
-
-                <Border Grid.Row="5" Background="#14279B" Width="430" HorizontalAlignment="Left"
+                <Border Grid.Row="1" Background="#14279B" Width="430" HorizontalAlignment="Left"
                  CornerRadius="10">
                     <Border.Effect>
                         <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
                     </Border.Effect>
                     <DockPanel Height="35" Width="410" Grid.Column="1">
-                        <Label Content="Versi Aplikasi" HorizontalAlignment="left" VerticalAlignment="Center"
+                        <Label Content="Nama" HorizontalAlignment="left" VerticalAlignment="Center"
                          Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
-                        <Label Content="1.1.0" HorizontalAlignment="Right" VerticalAlignment="Center"
-                         Foreground="White" FontWeight="Bold" Opacity="0.6" FontSize="14" HorizontalContentAlignment="Center" 
+                        <Label Content="Budi Perkasa Sejahtera" HorizontalAlignment="Right" VerticalAlignment="Center"
+                         Foreground="White" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
                     </DockPanel>
                 </Border>
 
+                <Border Grid.Row="2" Background="#14279B" Width="430" HorizontalAlignment="Left"
+                 CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                    </Border.Effect>
+                    <DockPanel Height="35" Width="410" Grid.Column="1">
+                        <Label Content="Username" HorizontalAlignment="left" VerticalAlignment="Center"
+                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
+                         VerticalContentAlignment="Center"/>
+                        <Label Content="budiperkasa" HorizontalAlignment="Right" VerticalAlignment="Center"
+                         Foreground="White" FontSize="16" HorizontalContentAlignment="Center" 
+                         VerticalContentAlignment="Center"/>
+                    </DockPanel>
+                </Border>
+
+                <Border Grid.Row="3" Background="#14279B" Width="430" HorizontalAlignment="Left"
+                 CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
+                    </Border.Effect>
+                    <DockPanel Height="35" Width="410" Grid.Column="1">
+                        <Label Content="Password" HorizontalAlignment="left" VerticalAlignment="Center"
+                         Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
+                         VerticalContentAlignment="Center"/>
+                        <Label Content="josbosku123" HorizontalAlignment="Right" VerticalAlignment="Center"
+                         Foreground="White" FontSize="16" HorizontalContentAlignment="Center" 
+                         VerticalContentAlignment="Center"/>
+                    </DockPanel>
+                </Border>
             </Grid>
         </Grid>
     </Grid>

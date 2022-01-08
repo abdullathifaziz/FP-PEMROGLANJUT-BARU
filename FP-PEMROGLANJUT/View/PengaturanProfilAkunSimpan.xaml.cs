@@ -14,28 +14,23 @@ using System.Windows.Shapes;
 namespace FP_PEMROGLANJUT.View
 {
     /// <summary>
-    /// Interaction logic for Pengaturan.xaml
+    /// Interaction logic for PengaturanProfilAkunSimpan.xaml
     /// </summary>
-    public partial class Pengaturan : Page
+    public partial class PengaturanProfilAkunSimpan : Page
     {
-        public Pengaturan()
+        public PengaturanProfilAkunSimpan()
         {
             InitializeComponent();
         }
 
-        private void ProfilAkun_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new PengaturanProfilAkun());
         }
 
-        private void BantuanPengguna_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Simpan_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new PengaturanBantuanPengguna());
-        }
-
-        private void TentangAplikasi_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            NavigationService.Navigate(new PengaturanTentangAplikasi());
+            NavigationService.Navigate(new PengaturanProfilAkun());
         }
     }
 }
