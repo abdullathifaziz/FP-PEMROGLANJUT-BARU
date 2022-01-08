@@ -25,14 +25,13 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuNominal5000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new NoTelpPembeliPage());
             PembayaranPage.nominal = "Rp 5.000";
+            NavigationService.Navigate(new NoTelpPembeliPage());
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            PulsaPage pulsaPage = new PulsaPage();
-            NavigationService.Navigate(pulsaPage);
+            NavigationService.Navigate(new PulsaPage());
         }
 
         private void menuNominal10000_MouseDown(object sender, MouseButtonEventArgs e)
@@ -43,38 +42,39 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuNominal15000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            PembayaranPage.nominal = "Rp 15.000";
+            NavigationService.Navigate(new NoTelpPembeliPage());
+
         }
 
         private void menuNominal20000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            PembayaranPage.nominal = "Rp 20.000";
+            NavigationService.Navigate(new NoTelpPembeliPage());
         }
 
         private void menuNominal35000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            PembayaranPage.nominal = "Rp 35.000";
+            NavigationService.Navigate(new NoTelpPembeliPage());
         }
 
         private void menuNominal50000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            PembayaranPage.nominal = "Rp 50.000";
+            NavigationService.Navigate(new NoTelpPembeliPage());
         }
 
         private void menuNominal100000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            PembayaranPage.nominal = "Rp 100.000";
+            NavigationService.Navigate(new NoTelpPembeliPage());
         }
 
         private void menuNominal150000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NoTelpPembeliPage noTelpPembeliPage = new NoTelpPembeliPage();
-            NavigationService.Navigate(noTelpPembeliPage);
+            PembayaranPage.nominal = "Rp 150.000";
+            NavigationService.Navigate(new NoTelpPembeliPage());
         }
     }
 }

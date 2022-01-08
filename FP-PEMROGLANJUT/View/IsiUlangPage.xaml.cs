@@ -25,29 +25,27 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuPulsa_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new PulsaPage());
-
             PembayaranPage.layanan = "Pulsa";
+            NavigationService.Navigate(new PulsaPage());
         }
 
         private void menuPaketData_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            PaketDataPage paketDataPage = new PaketDataPage();
-            NavigationService.Navigate(paketDataPage);
+            PembayaranPage.layanan = "Paket Data";
+            NavigationService.Navigate(new PaketDataPage());
         }
 
         private void menuPascabayar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            PascabayarPage pascabayarPage = new PascabayarPage();
-            NavigationService.Navigate(pascabayarPage);
-
             PembayaranPage.icon = "pascabayar.png";
+            PembayaranPage.layanan = "Pascabayar";
+            NavigationService.Navigate(new PascabayarPage());
         }
 
         private void menuEWallet_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            EWalletPage eWalletPage = new EWalletPage();
-            NavigationService.Navigate(eWalletPage);
+            PembayaranPage.layanan = "E-Wallet";
+            NavigationService.Navigate(new EWalletPage());
         }
     }
 }

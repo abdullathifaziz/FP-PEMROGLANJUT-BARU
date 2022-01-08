@@ -23,8 +23,12 @@ namespace FP_PEMROGLANJUT.View
         public static string nominal;
         public static string nomor;
 
+        Controller.TransaksiController transaksiController;
+
         public PembayaranPage()
         {
+            transaksiController = new Controller.TransaksiController(this);
+
             InitializeComponent();
 
             string path = "/Images/" + icon;
@@ -37,6 +41,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void btnBayar_Click(object sender, RoutedEventArgs e)
         {
+            //transaksiController.Counter();
             NavigationService.Navigate(new NominalBayarPage());
         }
     }

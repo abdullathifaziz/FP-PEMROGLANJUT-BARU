@@ -17,5 +17,11 @@ namespace FP_PEMROGLANJUT.Model
         {
             temp = new DBConnector();
         }
+
+        public bool InsertTotalBayar()
+        {
+            string data = id_transaksi + "," + total_bayar;
+            return temp.Insert("pembayaran(id_transaksi,total_bayar)", data);
+        }
     }
 }
