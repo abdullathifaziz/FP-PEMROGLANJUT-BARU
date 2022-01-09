@@ -165,5 +165,34 @@ namespace FP_PEMROGLANJUT.Model
             connector.Close();
             return ds;
         }
+
+        public DataSet CustomSelectJoin(string tabel, string kondisi)
+        {
+            DataSet ds = new DataSet();
+
+            try
+            {
+                connector.Open();
+                command = new SqlCommand();
+                command.Connection = connector;
+                command.CommandType = CommandType.Text;
+                if (kondisi == null)
+                {
+                    command.CommandText = "SELECT produk.kategori_produk AS 'Kategori Produk',produk.jenis_produk AS 'Jenis Produk',produk.nama_produk AS 'Nama Produk',produk.nominal AS 'Paket Yang Dipilih',produk.harga AS 'Harga Paket',tagihan.kategori_tagihan AS 'Kategori Tagihan',tagihan.jenis_tagihan AS 'Jenis Tagihan',tagihan.nomor_tagihan AS 'Nomor Tagihan Pelanggan',tagihan.nama_pelanggan AS 'Nama Pelanggan',tagihan.daerah AS 'Daerah Pelanggan',tagihan.periode AS 'Periode Tagihan',tagihan.total_tagihan AS 'Total Tagihan',pembeli.nomor_pembeli AS 'Nomor Telepon Pembeli',pembeli.userid_pembeli AS 'User ID Pembeli',pembeli.email AS 'E-Mail Pembeli',pembayaran.total_bayar AS 'Total Yang Dibayarkan' FROM " + tabel;
+                }
+                else
+                {
+                    command.CommandText = "SELECT produk.kategori_produk AS 'Kategori Produk',produk.jenis_produk AS 'Jenis Produk',produk.nama_produk AS 'Nama Produk',produk.nominal AS 'Paket Yang Dipilih',produk.harga AS 'Harga Paket',tagihan.kategori_tagihan AS 'Kategori Tagihan',tagihan.jenis_tagihan AS 'Jenis Tagihan',tagihan.nomor_tagihan AS 'Nomor Tagihan Pelanggan',tagihan.nama_pelanggan AS 'Nama Pelanggan',tagihan.daerah AS 'Daerah Pelanggan',tagihan.periode AS 'Periode Tagihan',tagihan.total_tagihan AS 'Total Tagihan',pembeli.nomor_pembeli AS 'Nomor Telepon Pembeli',pembeli.userid_pembeli AS 'User ID Pembeli',pembeli.email AS 'E-Mail Pembeli',pembayaran.total_bayar AS 'Total Yang Dibayarkan' FROM " + tabel + " WHERE " + kondisi;
+                }
+                SqlDataAdapter sda = new SqlDataAdapter(command);
+                sda.Fill(ds, tabel);
+            }
+            catch (SqlException)
+            {
+                ds = null;
+            }
+            connector.Close();
+            return ds;
+        }
     }
 }
