@@ -53,7 +53,7 @@
                 <Label Grid.Row="0" Content="Profil Akun" HorizontalAlignment="Left" VerticalAlignment="Center" 
                  FontSize="20" Foreground="White" FontFamily="Righteous" FontWeight="Bold"/>
 
-                <Border x:Name="btnSimpanAkunProfil" Grid.Row="0" Background="#14279B" Height="30" Width="65" HorizontalAlignment="Right" 
+                <Border x:Name="btnSimpan" Grid.Row="0" Background="#14279B" Height="30" Width="65" HorizontalAlignment="Right" 
                  CornerRadius="10" MouseDown="Simpan_MouseDown" Margin="0,0,15,0">
                     <Border.Effect>
                         <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>

@@ -53,10 +53,10 @@
                 </Button>
             </DockPanel>
         </Grid>
-        <DataGrid x:Name="dgSiswa" ItemsSource="{Binding}"
+        <DataGrid x:Name="dgTransaksi" ItemsSource="{Binding}"
                       Background="White"
                       Width="850" Height="400"
                   Grid.Row="2"
-                  Margin="20,20,20,20" SelectionChanged="dgSiswa_SelectionChanged"/>
+                  Margin="20,20,20,20" />
     </Grid>
 </Page>

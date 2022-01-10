@@ -40,7 +40,7 @@ namespace FP_PEMROGLANJUT.Controller
         {
             string cari = riwayat.txtCari.Text;
             DataSet data = transaksi.SelectDataGrid(cari);
-            riwayat.dgSiswa.ItemsSource = data.Tables[0].DefaultView;
+            riwayat.dgTransaksi.ItemsSource = data.Tables[0].DefaultView;
         }
     }
 }

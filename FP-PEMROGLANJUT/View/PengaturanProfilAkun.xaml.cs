@@ -18,9 +18,18 @@ namespace FP_PEMROGLANJUT.View
     /// </summary>
     public partial class PengaturanProfilAkun : Page
     {
+
+        Controller.AkunController akunController;
+
         public PengaturanProfilAkun()
         {
             InitializeComponent();
+
+            akunController = new Controller.AkunController(this);
+
+            lblNama.Content = getLoged();
+            lblUser.Content = getLoged();
+            lblPass.Content = getLoged();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -31,6 +40,11 @@ namespace FP_PEMROGLANJUT.View
         private void Edit_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new PengaturanProfilAkunSimpan());
+        }
+
+        private string getLoged()
+        {
+            return ((HomeWindow)Application.Current.Windows[0]).lblIDUser.Content.ToString();
         }
     }
 }

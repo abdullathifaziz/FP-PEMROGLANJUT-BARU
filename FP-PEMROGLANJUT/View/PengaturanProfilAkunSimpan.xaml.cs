@@ -16,11 +16,26 @@ namespace FP_PEMROGLANJUT.View
     /// <summary>
     /// Interaction logic for PengaturanProfilAkunSimpan.xaml
     /// </summary>
+
     public partial class PengaturanProfilAkunSimpan : Page
     {
+
+        public static string user;
+        public static string pass;
+
+        //object ke controller
+        Controller.AkunController akunController;
+
         public PengaturanProfilAkunSimpan()
         {
             InitializeComponent();
+
+            akunController = new Controller.AkunController(this);
+
+            Model.AkunModel modelAkun = new Model.AkunModel();
+
+            usernameAkunProfil.Text = user;
+            passowrdAkunProfil.Text = pass;
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -30,6 +45,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Simpan_MouseDown(object sender, MouseButtonEventArgs e)
         {
+
+
             NavigationService.Navigate(new PengaturanProfilAkun());
         }
     }

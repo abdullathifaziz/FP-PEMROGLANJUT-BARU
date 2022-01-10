@@ -11,6 +11,8 @@ namespace FP_PEMROGLANJUT.Controller
         Model.AkunModel akun;
         View.LoginPage login;
         View.BuatAkunPage register;
+        View.PengaturanProfilAkunSimpan ubahSimpan;
+        View.PengaturanProfilAkun akunProfil;
 
         // Instance
         public AkunController(View.LoginPage login)
@@ -23,6 +25,18 @@ namespace FP_PEMROGLANJUT.Controller
         {
             akun = new Model.AkunModel();
             this.register = register;
+        }
+
+        public AkunController(View.PengaturanProfilAkunSimpan ubahSimpan)
+        {
+            akun = new Model.AkunModel();
+            this.ubahSimpan = ubahSimpan;
+        }
+
+        public AkunController(View.PengaturanProfilAkun akunProfil)
+        {
+            akun = new Model.AkunModel();
+            this.akunProfil = akunProfil;
         }
 
         public void Login()
@@ -38,7 +52,7 @@ namespace FP_PEMROGLANJUT.Controller
             {
                 View.HomeWindow homeWindow = new View.HomeWindow();
                 homeWindow.Show();
-                homeWindow.lblIDUser.Content = "ID : " + akun.usrname;
+                homeWindow.lblIDUser.Content = akun.usrname;
                 homeWindow.lblUser.Content = akun.nama_depan + " " + akun.nama_belakang;
                 login.Close();
             }
@@ -81,6 +95,13 @@ namespace FP_PEMROGLANJUT.Controller
             {
                 MessageBox.Show("Mohon checklist Syarat dan Ketentuan");
             }
+        }
+
+        //update data siswa
+        public void EditAkun()
+        {
+            akun.usrname = ubahSimpan.usernameAkunProfil.Text;
+            akun.passwd = ubahSimpan.passowrdAkunProfil.Text;
         }
     }
 }

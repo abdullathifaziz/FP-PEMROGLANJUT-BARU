@@ -16,6 +16,8 @@ namespace FP_PEMROGLANJUT.View
     /// <summary>
     /// Interaction logic for RiwayatPage.xaml
     /// </summary>
+    /// 
+
     public partial class RiwayatPage : Page
     {
         Controller.TransaksiController transaksi;
@@ -28,11 +30,6 @@ namespace FP_PEMROGLANJUT.View
             transaksi.DataRiwayat();
         }
 
-        private void dgSiswa_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void txtCari_TextChanged(object sender, TextChangedEventArgs e)
         {
             transaksi.DataRiwayat();
@@ -41,6 +38,11 @@ namespace FP_PEMROGLANJUT.View
         private void btnCari_Click(object sender, RoutedEventArgs e)
         {
             transaksi.DataRiwayat();
+        }
+
+        private void dgTransaksi_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

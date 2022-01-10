@@ -54,7 +54,7 @@
                 <Label Grid.Row="0" Content="Profil Akun" HorizontalAlignment="Left" VerticalAlignment="Center" 
                  FontSize="20" Foreground="White" FontFamily="Righteous" FontWeight="Bold"/>
 
-                <Border Grid.Row="0" Background="#14279B" Height="30" Width="60" HorizontalAlignment="Right" 
+                <Border x:Name="btnEdit" Grid.Row="0" Background="#14279B" Height="30" Width="60" HorizontalAlignment="Right" 
                  CornerRadius="10" MouseDown="Edit_MouseDown" Margin="0,0,15,0">
                     <Border.Effect>
                         <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
@@ -73,7 +73,7 @@
                         <Label Content="Nama" HorizontalAlignment="left" VerticalAlignment="Center"
                          Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
-                        <Label Content="Budi Perkasa Sejahtera" HorizontalAlignment="Right" VerticalAlignment="Center"
+                        <Label x:Name="lblNama" Content="Budi Perkasa Sejahtera" HorizontalAlignment="Right" VerticalAlignment="Center"
                          Foreground="White" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
                     </DockPanel>
@@ -88,7 +88,7 @@
                         <Label Content="Username" HorizontalAlignment="left" VerticalAlignment="Center"
                          Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
-                        <Label Content="budiperkasa" HorizontalAlignment="Right" VerticalAlignment="Center"
+                        <Label x:Name="lblUser" Content="budiperkasa" HorizontalAlignment="Right" VerticalAlignment="Center"
                          Foreground="White" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
                     </DockPanel>
@@ -103,7 +103,7 @@
                         <Label Content="Password" HorizontalAlignment="left" VerticalAlignment="Center"
                          Foreground="White" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
-                        <Label Content="josbosku123" HorizontalAlignment="Right" VerticalAlignment="Center"
+                        <Label x:Name="lblPass" Content="josbosku123" HorizontalAlignment="Right" VerticalAlignment="Center"
                          Foreground="White" FontSize="16" HorizontalContentAlignment="Center" 
                          VerticalContentAlignment="Center"/>
                     </DockPanel>

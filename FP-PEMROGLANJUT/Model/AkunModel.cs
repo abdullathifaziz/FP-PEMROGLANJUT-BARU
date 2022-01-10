@@ -61,5 +61,18 @@ namespace FP_PEMROGLANJUT.Model
             return result;
         }
 
+        public bool UbahUser(string baru, string lama)
+        {
+            bool result = false;
+            result = temp.Update("akun", "username = '" + baru + "'", "username = '" + lama + "'");
+            return result;
+        }
+
+        public bool UbahPass(string baru, string lama)
+        {
+            bool result = false;
+            result = temp.Update("akun", "passwd = '" + baru + "'", "passwd = '" + lama + "'");
+            return result;
+        }
     }
 }

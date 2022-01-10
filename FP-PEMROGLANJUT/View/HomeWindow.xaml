@@ -97,8 +97,9 @@
                     <Label x:Name="lblUser" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="Budi Perkasa Sejahtera" Foreground="White" Padding="0,0,0,0" FontFamily="Righteous"/>
                 </DockPanel>
 
-                <Label x:Name="lblIDUser" Grid.Row="1" Grid.Column="3" Width="100" Height="20" Content="ID : 123456789" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" Foreground="White" Padding="0,0,0,0" FontFamily="Righteous" Margin="0,26,0,0" Grid.RowSpan="2"/>
-
+                <Label Grid.Row="1" Grid.Column="3" Width="100" Height="20" Content="User : " FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" Foreground="White" Padding="0,0,0,0" FontFamily="Righteous" Margin="0,26,0,0" Grid.RowSpan="2"/>
+                <Label x:Name="lblIDUser" Grid.Row="1" Grid.Column="3" Width="100" Height="20" Content="123456789" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" Foreground="White" Padding="30,0,0,0" FontFamily="Righteous" Margin="0,26,0,0" Grid.RowSpan="2"/>
+                
                 <DockPanel x:Name="logout" MouseDown="logout_MouseDown" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="26" Width="32">
                     <Image Source="/Images/logout.png"/>
                 </DockPanel>
