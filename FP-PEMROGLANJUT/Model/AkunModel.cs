@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
+using System.Windows;
 
 namespace FP_PEMROGLANJUT.Model
 {
@@ -64,7 +65,7 @@ namespace FP_PEMROGLANJUT.Model
         public bool UbahUser(string baru, string lama)
         {
             bool result = false;
-            result = temp.Update("akun", "username = '" + baru + "'", "username = '" + lama + "'");
+            result = temp.Update("akun", "usrname = '" + baru + "'", "usrname = '" + lama + "'");
             return result;
         }
 
@@ -73,6 +74,27 @@ namespace FP_PEMROGLANJUT.Model
             bool result = false;
             result = temp.Update("akun", "passwd = '" + baru + "'", "passwd = '" + lama + "'");
             return result;
+        }
+
+        public string[] getDetail(string username)
+        {
+            string[] accountDetail = { "", "", "" };
+            try
+            {
+                accountDetail[0] = temp.Select("akun", "usrname='" + username + "'").Tables[0].Rows[0]["nama_depan"].ToString();
+                accountDetail[0] += " " + temp.Select("akun", "usrname='" + username + "'").Tables[0].Rows[0]["nama_belakang"].ToString();
+                accountDetail[1] = temp.Select("akun", "usrname='" + username + "'").Tables[0].Rows[0]["usrname"].ToString();
+                accountDetail[2] = temp.Select("akun", "usrname='" + username + "'").Tables[0].Rows[0]["passwd"].ToString();
+                
+            }
+            catch (Exception e)
+            {
+                accountDetail[0] = "";
+                MessageBox.Show(username);
+                MessageBox.Show(e.Message);
+            }
+
+            return accountDetail;
         }
     }
 }

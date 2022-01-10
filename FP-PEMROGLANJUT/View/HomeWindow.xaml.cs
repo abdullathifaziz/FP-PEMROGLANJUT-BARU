@@ -52,9 +52,13 @@ namespace FP_PEMROGLANJUT.View
 
         private void logout_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            LoginPage loginPage = new LoginPage();
-            loginPage.Show();
-            this.Close();
+            MessageBoxResult keluar = MessageBox.Show("Yakin Ingin Keluar?", "KELUAR", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if(keluar == MessageBoxResult.Yes)
+            {
+                LoginPage loginPage = new LoginPage();
+                loginPage.Show();
+                this.Close();
+            }
         }
 
         private void menuRiwayat_MouseDown(object sender, MouseButtonEventArgs e)

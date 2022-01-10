@@ -103,5 +103,23 @@ namespace FP_PEMROGLANJUT.Controller
             akun.usrname = ubahSimpan.usernameAkunProfil.Text;
             akun.passwd = ubahSimpan.passowrdAkunProfil.Text;
         }
+
+        public void LoadData()
+        {
+            string username = akunProfil.lblNama.Content.ToString();
+
+            string[] data = akun.getDetail(username);
+
+            if (data[0] == "")
+            {
+                MessageBox.Show("Unknown error!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                akunProfil.lblNama.Content = data[0];
+                akunProfil.lblUser.Content = data[1];
+                akunProfil.lblPass.Content = data[2];
+            }
+        }
     }
 }

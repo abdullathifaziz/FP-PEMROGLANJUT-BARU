@@ -28,8 +28,7 @@ namespace FP_PEMROGLANJUT.View
             akunController = new Controller.AkunController(this);
 
             lblNama.Content = getLoged();
-            lblUser.Content = getLoged();
-            lblPass.Content = getLoged();
+            akunController.LoadData();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -39,7 +38,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void Edit_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new PengaturanProfilAkunSimpan());
+            
         }
 
         private string getLoged()
