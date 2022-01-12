@@ -99,7 +99,7 @@
                     <Label Content="Dengan menyetujui ini berarti anda telah membaca" FontFamily="Arial" Foreground="black" FontSize="10" FontWeight="Bold" Width="254" RenderTransformOrigin="1.35,-0.91" Canvas.Left="82" Canvas.Top="328" Opacity="0.5"/>
                     <Label Content="syarat dan ketentuan" FontFamily="Arial" Foreground="black" FontSize="10" FontWeight="Bold" Width="254" RenderTransformOrigin="1.35,-0.91" Canvas.Left="82" Canvas.Top="342"/>
                     <Label Content="yang berlaku" FontFamily="Arial" Foreground="black" FontSize="10" FontWeight="Bold" Width="151" RenderTransformOrigin="1.35,-0.91" Canvas.Left="185" Canvas.Top="342" Opacity="0.5"/>
-                    <Button Style="{DynamicResource RoundedButton}" x:Name="btnDaftar" Content="Daftar" Width="70" Height="25" FontFamily="Arial" FontSize="10" Background="#414462" Foreground="White" BorderBrush="#414462" Click="btnDaftar_Click" Grid.Column="2" Grid.Row="1" Canvas.Left="275" Canvas.Top="374" FontWeight="Bold"/>
+                    <Button Style="{DynamicResource RoundedButton}" x:Name="btnDaftar" Content="Daftar" Width="70" Height="25" FontFamily="Arial" FontSize="10" Background="#14279B" Foreground="White" BorderBrush="#414462" Click="btnDaftar_Click" Grid.Column="2" Grid.Row="1" Canvas.Left="275" Canvas.Top="374" FontWeight="Bold"/>
 
                 </Canvas>
             </Border>

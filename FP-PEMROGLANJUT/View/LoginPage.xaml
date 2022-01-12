@@ -93,7 +93,7 @@
                 <Label x:Name="lblPassword" Content="Password" FontFamily="Arial" Foreground="#C6BABA" FontSize="12" FontWeight="Bold" Width="70" RenderTransformOrigin="1.35,-0.91" Canvas.Left="56" Canvas.Top="271"/>
                 <PasswordBox x:Name="txtPassword" FontFamily="Arial" FontSize="12" FontStyle="Normal" Height="25" Width="283" FontWeight="Normal" Canvas.Left="62" Canvas.Top="300" Background="{x:Null}" BorderBrush="{x:Null}" />
                 <Rectangle Height="1" Stroke="Black" Opacity="10" Width="283" Canvas.Left="62" Canvas.Top="325"/>
-                <Button Style="{DynamicResource RoundedButton}" x:Name="btnLogin" Content="Log In" Width="240" Height="35" FontFamily="Arial" FontSize="14" Background="#414462" Foreground="White" BorderBrush="#414462" Click="btnLogin_Click" Grid.Column="2" Grid.Row="1" Canvas.Left="82" Canvas.Top="352" FontWeight="Bold"/>
+                    <Button Style="{DynamicResource RoundedButton}" x:Name="btnLogin" Content="Log In" Width="240" Height="35" FontFamily="Arial" FontSize="14" Background="#14279B" Foreground="White" BorderBrush="#14279B" Click="btnLogin_Click" Grid.Column="2" Grid.Row="1" Canvas.Left="82" Canvas.Top="352" FontWeight="Bold"/>
             </Canvas>
         </Border>
         <Image x:Name="imgIconLogin" Source="/Images/LOGO PAYME.png" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" />

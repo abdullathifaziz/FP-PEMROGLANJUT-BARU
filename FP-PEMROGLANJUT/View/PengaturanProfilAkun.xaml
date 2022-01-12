@@ -54,15 +54,7 @@
                 <Label Grid.Row="0" Content="Profil Akun" HorizontalAlignment="Left" VerticalAlignment="Center" 
                  FontSize="20" Foreground="White" FontFamily="Righteous" FontWeight="Bold"/>
 
-                <Border x:Name="btnEdit" Grid.Row="0" Background="#14279B" Height="30" Width="60" HorizontalAlignment="Right" 
-                 CornerRadius="10" MouseDown="Edit_MouseDown" Margin="0,0,15,0">
-                    <Border.Effect>
-                        <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.5" Direction="315"/>
-                    </Border.Effect>
-                    <Label Content="EDIT" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                 Foreground="White" FontWeight="Bold" Style="{DynamicResource MenuBorder}" HorizontalContentAlignment="Center" 
-                 VerticalContentAlignment="Center"/>
-                </Border>
+                
 
                 <Border Grid.Row="1" Background="#14279B" Width="430" HorizontalAlignment="Left"
                  CornerRadius="10">

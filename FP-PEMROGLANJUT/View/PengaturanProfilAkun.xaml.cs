@@ -36,11 +36,6 @@ namespace FP_PEMROGLANJUT.View
             NavigationService.Navigate(new Pengaturan());
         }
 
-        private void Edit_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            
-        }
-
         private string getLoged()
         {
             return ((HomeWindow)Application.Current.Windows[0]).lblIDUser.Content.ToString();
