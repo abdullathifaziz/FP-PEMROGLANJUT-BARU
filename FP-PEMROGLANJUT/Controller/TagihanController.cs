@@ -74,6 +74,5 @@ namespace FP_PEMROGLANJUT.Controller
             //tagihan.periode = tagihan.Periode(tagihan.id_tagihan);
             //tagihan.total_tagihan = Int32.Parse(tagihan.TotalTagihan(tagihan.id_tagihan));
         }
-
     }
 }

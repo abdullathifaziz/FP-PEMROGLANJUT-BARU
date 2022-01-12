@@ -19,15 +19,24 @@ namespace FP_PEMROGLANJUT.View
     public partial class CekTagihanPascabayarPage : Page
     {
         Controller.TagihanController tagihan;
+
+        private string no_pelanggan;
+        private string periode_pelanggan;
+        private string total_bayar;
+
         public CekTagihanPascabayarPage(string nomor)
         {
             InitializeComponent();
             tagihan = new Controller.TagihanController(this);
-
             Model.TagihanModel modeltagihan = new Model.TagihanModel();
-            lblNomorKartu.Content = nomor;
-            lblPeriodeKartu.Content = modeltagihan.Periode(nomor);
-            lblTotalKartu.Content = "Rp. " + modeltagihan.TotalTagihan(nomor);
+
+            no_pelanggan = nomor;
+            periode_pelanggan = modeltagihan.Periode(nomor);
+            total_bayar = "Rp. " + modeltagihan.TotalTagihan(nomor);
+
+            lblNomorKartu.Content = no_pelanggan;
+            lblPeriodeKartu.Content = periode_pelanggan;
+            lblTotalKartu.Content = total_bayar;
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -38,6 +47,9 @@ namespace FP_PEMROGLANJUT.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            View.PembayaranPage.nominal = "Kartu";
+            View.PembayaranPage.nomor = no_pelanggan;
+
             PembayaranPage pembayaranPage = new PembayaranPage();
             NavigationService.Navigate(pembayaranPage);
         }

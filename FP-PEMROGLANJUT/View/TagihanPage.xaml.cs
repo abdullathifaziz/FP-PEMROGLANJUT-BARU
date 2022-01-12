@@ -25,6 +25,7 @@ namespace FP_PEMROGLANJUT.View
 
         private void menuListrikPLN_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            PembayaranPage.layanan = "Pascabayar";
             NavigationService.Navigate(new TagihanListrikPLNPage());
         }
 
@@ -33,14 +34,14 @@ namespace FP_PEMROGLANJUT.View
             AirPDAMPage airPDAMPage = new AirPDAMPage();
             airPDAMPage.header.Content = "Air PDAM";
             NavigationService.Navigate(airPDAMPage);
-
+            PembayaranPage.layanan = "Pascabayar";
             PembayaranPage.icon = "airpdam.png";
         }
 
         private void menuInternet_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new InternetPage());
-
+            PembayaranPage.layanan = "Pascabayar";
             PembayaranPage.icon = "internet.png";
         }
     }
