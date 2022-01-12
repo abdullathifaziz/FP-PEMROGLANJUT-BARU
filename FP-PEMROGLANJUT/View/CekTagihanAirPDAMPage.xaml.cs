@@ -19,6 +19,9 @@ namespace FP_PEMROGLANJUT.View
     public partial class CekTagihanAirPDAMPage : Page
     {
         Controller.TagihanController tagihan;
+
+        private string no_pelanggan;
+
         public CekTagihanAirPDAMPage(string nomor, string wilayah)
         {
             InitializeComponent();
@@ -26,8 +29,9 @@ namespace FP_PEMROGLANJUT.View
 
             Model.TagihanModel modeltagihan = new Model.TagihanModel();
 
+            no_pelanggan = nomor;
+            lblNomorPelanggan.Content = no_pelanggan;
             lblWilayah.Content = wilayah;
-            lblNomorPelanggan.Content = nomor;
             lblPeriode.Content = modeltagihan.Periode(nomor);
             lblTagihan.Content = "Rp. " + modeltagihan.TotalTagihan(nomor);
         }
@@ -39,6 +43,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            PembayaranPage.nominal = "PDAM";
+            PembayaranPage.nomor = no_pelanggan;
             NavigationService.Navigate(new PembayaranPage());
         }
     }

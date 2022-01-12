@@ -19,6 +19,9 @@ namespace FP_PEMROGLANJUT.View
     public partial class CekTagihanInternetPage : Page
     {
         Controller.TagihanController tagihan;
+
+        private string no_pelanggan;
+
         public CekTagihanInternetPage(string nomor, string provider)
         {
             InitializeComponent();
@@ -26,8 +29,10 @@ namespace FP_PEMROGLANJUT.View
 
             Model.TagihanModel modeltagihan = new Model.TagihanModel();
 
+            no_pelanggan = nomor;
+
             lblProvider.Content = provider;
-            lblNomor.Content = nomor;
+            lblNomor.Content = no_pelanggan;
             lblPeriode.Content = modeltagihan.Periode(nomor);
             lblTagihan.Content = "Rp. " + modeltagihan.TotalTagihan(nomor);
         }
@@ -39,6 +44,8 @@ namespace FP_PEMROGLANJUT.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            PembayaranPage.nominal = "Internet";
+            PembayaranPage.nomor = no_pelanggan;
             NavigationService.Navigate(new PembayaranPage());
         }
     }
