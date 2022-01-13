@@ -77,12 +77,7 @@
                 <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
             </Label.Effect>
         </Label>
-        <Label Content="Budi Perkasa - Shift 1" Foreground="#FFD8CEFF" FontSize="18" Margin="0,220,0,0" 
-         HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Righteous">
-            <Label.Effect>
-                <DropShadowEffect ShadowDepth="4" BlurRadius="7" Opacity="0.1" Direction="315" Color="White"/>
-            </Label.Effect>
-        </Label>
+        
 
     </Grid>
 </Page>

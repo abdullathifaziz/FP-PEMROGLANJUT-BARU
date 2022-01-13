@@ -32,7 +32,7 @@
 
             <DockPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,30,0">
                 <Label Foreground="White" FontSize="20" Content="Cari" Margin="0,0,20,0"/>
-                <TextBox x:Name="txtCari" Width="200"
+                <TextBox x:Name="txtCari" Width="200" Padding="10,0,0,0"
                          FontSize="18" VerticalContentAlignment="Center"
                          Margin="0,0,20,0" HorizontalContentAlignment="Left"
                          Height="40" TextChanged="txtCari_TextChanged">
