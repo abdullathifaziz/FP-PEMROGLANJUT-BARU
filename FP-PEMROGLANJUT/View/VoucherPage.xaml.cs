@@ -25,49 +25,65 @@ namespace FP_PEMROGLANJUT.View
         private void menuIndomaret_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "Indomaret";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "indomaret.png";
         }
         private void menuAlfamart_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "Alfamart";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "alfamart.png";
         }
         private void menuOyo_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "OYO";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "oyo.png";
         }
         private void menuRedDoorz_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "RedDoorz";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "reddoorz.png";
         }
         private void menuCarrefour_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "Carrefour";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "carrefour.png";
         }
         private void menuGramedia_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "Gramedia";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "gramedia.png";
         }
         private void menuK24Klik_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "K24 Klik";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "k24klik.png";
         }
         private void menuTiket_MouseDown(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new NominalVoucherPage());
-
+            PembayaranPage.layanan = "Voucher";
+            PembayaranPage.nominal = "Ticket.com";
+            PembayaranPage.nomor = "";
             PembayaranPage.icon = "tiketcom.png";
         }
 
